@@ -10,20 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#004e63">
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </environment>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
-    <link rel="stylesheet" href="~/Css/af57d1fee1c4fa1532b0036abfd948aa.min.css" asp-append-version="true" type="text/css">
+    <link rel="stylesheet" href="~/Css/Style.css" asp-append-version="true" type="text/css">
     <link rel="shortcut icon" href="logo.png" />
 
 
 
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+
             <div class="navbar-header">
                 <div class="navbar-brand">
                     <a asp-controller="Home" asp-action="Index">
@@ -44,23 +48,23 @@
                         <span>
                             <input type="text" class="form-control subject-search-input" placeholder="¿Qué asignatura?">
                             <button type="submit" class="btn btn-default navbar-btn tutors" id="navbar-btn-search" style="margin-top: 0; margin-left: 1px; border-radius: 4px;    margin-bottom: 0;">Buscar</button>
-                  
+
                         </span>
                     </div>
                 </form>
             </div>
 
             <div class="navbar-right">
-                <ul class="nav navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     @{
                         if (ViewBag.Nombre == null)
                         {
-                            <li>
+                            <li class="nav-item active">
                                 <div>
                                     <a asp-action="Registro" asp-controller="Usuario">Registrarse</a>
                                 </div>
                             </li>
-                            <li>
+                            <li class="nav-item active">
                                 <div>
                                     <a asp-action="Login" asp-controller="Usuario">Ingresa</a>
                                 </div>
@@ -68,7 +72,7 @@
                         }
                         else
                         {
-                            <li>
+                            <li class="nav-item active">
                                 <div>
                                     <a asp-action="Logout" asp-controller="Usuario">Logout</a>
                                 </div>
@@ -76,22 +80,73 @@
                         }
                     }
 
-                    <li>
+                    <li class="nav-item active">
                         <button type="button" class="btn btn-default navbar-btn navbar-right tutors  " onclick="">¿Deseas dar clases particulares?</button>
                     </li>
                 </ul>
             </div>
         </div>
+    </nav>
+    <div class="containter-fluid" style="min-height: 492px">
+        @RenderBody()
     </div>
+   
 
-    <partial name="_CookieConsentPartial" />
+    <div class="footer ">
+        <div class="container">
+            <div class="col-md-12 no-margin no-padding">
 
-    @RenderBody()
-    <hr />
-    <footer>
-        <p>&copy; 2018 - TeachMeNET</p>
-    </footer>
+                <div class="col-md-4 left">
 
+                    <p class="company"><strong>TALLER IV</strong> (NOMBRE DE LA EMPRESA)</p>
+
+                    <p class="phone">(NUMERO DE LLAMADA)</p>
+                    <p class="email">CORREO</p>
+                    <a href="/faqs"><p class="faqs">(FOROS)</p></a>
+
+                </div>
+
+                <div class="col-md-4 middle">
+
+
+
+
+                    <div class="buttons b20-3" style="margin-top: 30px;">
+                        <a title="Descarga TeachMe para iOS en la App Store" href="" class="btn btn-default btn-download hvr-float-shadow">
+                            <i class="fab fa-apple" aria-hidden="true"></i>
+                            <span class="text">
+                                <span class="little">Descarga la app </span>
+                                <br>App Store
+                            </span>
+                        </a>
+                        <a title="Descarga TeachMe para Android en Google Play" href="" class="btn btn-default btn-download hvr-float-shadow">
+                            <i class="fab fa-android" aria-hidden="true"></i>
+                            <span class="text">
+                                <span class="little">Descarga la app </span>
+                                <br>Google Play
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-4 right">
+                    <a href=""><p class="blog">LINK 1</p></a>
+                    <a href=""><p class="blog">LINK 2</p></a>
+                    <p class="follow">LINK 3</p>
+                    <a href=""><i class="follow-item fab fa-facebook-f"></i></a>
+                    <a href=""><i class="follow-item fab fa-instagram"></i></a>
+                    <a href=""><i class="follow-item fab fa-twitter"></i></a>
+                    <a href=""><i class="follow-item fab fa-google-plus-g"></i></a>
+                    <a href=""><i class="follow-item fab fa-youtube"></i></a>
+                    <a href=""><i class="follow-item fab fa-pinterest"></i></a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -117,7 +172,9 @@
     <script src="https://static.teachapp.es/webapp/assets/v2/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://static.teachapp.es/webapp/assets/v2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://static.teachapp.es/webapp/assets/v2/js/575935f2b489265bf2e356ece198364c.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Efecto para la búsqueda de curso al dar scroll  -->
     <script>
