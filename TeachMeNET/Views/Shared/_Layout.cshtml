@@ -1,0 +1,155 @@
+﻿@using Microsoft.AspNetCore.Http
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - @ViewBag.Nombre - TeachMeNET</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#004e63">
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="~/Css/af57d1fee1c4fa1532b0036abfd948aa.min.css" asp-append-version="true" type="text/css">
+    <link rel="shortcut icon" href="logo.png" />
+
+
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a asp-controller="Home" asp-action="Index">
+                        <img alt="Logo TeachMe" src="~/Images/logo.png" />
+                        <div class="teachapp">
+                            PROYECTO
+                        </div>
+                        <br>
+                        <div class="slogan">
+                            TALLER IV
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center" style="margin: 0 auto!important; width: 1000px;">
+                <form class="navbar-form navbar-search" role="search" id="navbar-search" style="padding: 0" method="get" asp-action="Busqueda" asp-controller="Home">
+                    <div class="form-group" style="min-width: 100%;">
+                        <span>
+                            <input type="text" class="form-control subject-search-input" placeholder="¿Qué asignatura?">
+                            <button type="submit" class="btn btn-default navbar-btn tutors" id="navbar-btn-search" style="margin-top: 0; margin-left: 1px; border-radius: 4px;    margin-bottom: 0;">Buscar</button>
+                  
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    @{
+                        if (ViewBag.Nombre == null)
+                        {
+                            <li>
+                                <div>
+                                    <a asp-action="Registro" asp-controller="Usuario">Registrarse</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a asp-action="Login" asp-controller="Usuario">Ingresa</a>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <div>
+                                    <a asp-action="Logout" asp-controller="Usuario">Logout</a>
+                                </div>
+                            </li>
+                        }
+                    }
+
+                    <li>
+                        <button type="button" class="btn btn-default navbar-btn navbar-right tutors  " onclick="">¿Deseas dar clases particulares?</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <partial name="_CookieConsentPartial" />
+
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; 2018 - TeachMeNET</p>
+    </footer>
+
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    <script src="https://static.teachapp.es/webapp/assets/v2/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://static.teachapp.es/webapp/assets/v2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://static.teachapp.es/webapp/assets/v2/js/575935f2b489265bf2e356ece198364c.min.js"></script>
+
+
+    <!-- Efecto para la búsqueda de curso al dar scroll  -->
+    <script>
+        (function () {
+            ga('send', 'pageview', '/landing');
+
+
+            $(window).scroll(function (event) {
+                if (window.scrollY < 290) {
+                    $("#navbar-search").hide();
+                    $(".navbar-header").show();
+                    $(".navbar-right").show();
+                } else {
+                    $("#navbar-search").show();
+                    $(".navbar-header").hide();
+                    $(".navbar-right").hide();
+                }
+            });
+
+            $(document).on('data-attribute-changed', function (event, subject_id, group_id) {
+                if (subject_id != undefined && group_id != undefined) {
+                    $("#form-search").submit();
+                }
+            });
+
+
+        })();
+
+    </script>
+
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

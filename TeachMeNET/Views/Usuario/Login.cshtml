@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+@model TeachMeNET.Models.Entities.InicioSesionModel
+
+<div class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <form asp-controller="Usuario" asp-action="Login" method="post">
+                        <h4>Registrarse</h4>
+                        <hr />
+                        <div asp-validation-summary="All" class="text-danger">
+                            @Html.ValidationSummary()
+                        </div>
+                        
+                        <div class="form-group text-left">
+                            <label asp-for="Email">Correo</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-left">
+                            <label asp-for="Password">Contraseña</label>
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Iniciar sesi&oacute;n</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

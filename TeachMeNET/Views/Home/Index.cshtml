@@ -1,0 +1,395 @@
+﻿
+@{
+    ViewData["Title"] = "TeachMe";
+}
+
+    <div class="landing">
+
+        <div class="hero" style="background-image: linear-gradient(180deg,rgba(25, 66, 88,0.85),rgba(50, 183, 174, 0.95)),url('http://revistaganamas.com.pe/wp-content/uploads/2016/05/usilnuevasede.jpg')">
+
+            <div class="container">
+                <h1 class="b20-1">Elige la mejor tutoria con nuestros excelentes docentes</h1>
+
+                <div class="row b20-3" style="margin-top: 40px;">
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <form id="form-search" method="get" onkeypress="return event.keyCode !== 13;" asp-controller="Home" asp-action="Busqueda" style="margin-bottom: 0px;">
+                            <input id=query-subject-id name=subject_id type=hidden>
+                            <input id=query-lat name=lat type=hidden>
+                            <input id=query-lon name=lon type=hidden>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control input-md subject-search-input" id="subject-search" placeholder="¿Qué asignatura?">
+                            </div> <div class="form-group">
+                                <input type="text" class="form-control input-md subject-search-input" id="subject-search" placeholder="¿Qué distrito te encuenteras?">
+                            </div>
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-search" type="submit">
+                                    <span>Buscar</span>
+                                </button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-12 features">
+                    <div class="col-md-4">
+                        <img src="https://static.teachapp.es/webapp/assets/v2/images/i1.png" alt="birrete universitario">
+                        <h4>Nuestros tutores tienen una amplia carrera profesional y con una gran experiencia en educación </h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://static.teachapp.es/webapp/assets/v2/images/i2.png" alt="emblema aprobados clases particulares">
+                        <h4>Miles de estudiantes y alumnos forman parte de una excelente preparación gracias a nosotros </h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://static.teachapp.es/webapp/assets/v2/images/i3.png" alt="mano valoraciones positivas">
+                        <h4>Nuestro sistema de enseñanza nos respalda y nuestros alumnos dan fe de ello</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 title-container">
+                        <h2>Te brindamos la mejor tutoria estudiantil:</h2>
+                    </div>
+                    <div class="col-md-6 col-xs-12 no-padding">
+                        <div class="col-md-5 col-xs-4 profile">
+                            <img src="~/Images/mamaconhijo.jpg" alt="">
+                            <p><strong>María</strong></p>
+                        </div>
+
+                        <div class="col-md-7 col-xs-8 text">
+                            <div class="student">
+                                <div class="separator-vertical"></div>
+                                <p><strong>Busco profesor de inglés para mi hijo</strong></p>
+                                <p>• Que sea Magister en Ingles</p>
+                                <p>• Que dicte clases a domicilio</p>
+                                <p>• Que sea mujer </p>
+                                <p>• Libre los martes y jueves por la tarde</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12" style="padding-top: 50px;">
+                        <div class="col-md-7 col-xs-7 text">
+                            <div class="tutor">
+                                <p><strong>Hola María, yo podría</strong></p>
+                                <p>Trabajé en Londres • </p>
+                                <p>
+                                    Soy Magister en Educación •
+                                </p>
+                                <p>
+                                    ¿Empezamos este jueves? •
+                                </p>
+                                <div class="separator-vertical"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-5 profile">
+                            <img src="~/Images/mujer3.jpg" alt="Laura: profesora particular en TeachMe">
+                            <p style="margin-bottom: 0"><strong>Lorena</strong></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="display: inline-block">
+                        <h3>En <strong>Nuestra empresa</strong> puedes personalizar tu búsqueda por asignatura, nivel, localización...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subjects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 title-container">
+                        <h2>¿Qué te gustaría aprender hoy?</h2>
+                    </div>
+                    <div class="col-md-12 testimonies-container">
+                        <div class="col-md-4 col-xs-6">
+                            <div class="text">
+                                <p>“Quiero aprobar matemáticas”</p>
+                            </div>
+                            <img src="~/Images/hombre1.jpg" alt="Pedro: alumno clases particulares en TeachMe">
+                            <p><strong>Pedro</strong></p>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <div class="text">
+                                <p>“Quiero mejorar mi inglés”</p>
+                            </div>
+                            <img src="~/Images/mujer4.jpg" alt="Natalia: alumna clases particulares en TeachMe">
+                            <p><strong>Natalia</strong></p>
+                        </div>
+                        <div class="col-md-4 hide-xs">
+                            <div class="text">
+                                <p>“Quiero mejorar en historia del Perú”</p>
+                            </div>
+                            <img src="~/Images/mujer4.jpeg" alt="Norma: alumna clases particulares en TeachMe">
+                            <p><strong>Norma</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 subjects-container">
+                        <h3>Tenemos a los mejores tutores de cada asignatura</h3>
+                        <div class="col-md-12 levels-container no-padding">
+                            <div class="col-md-2 col-md-offset-1 col-xs-6 no-padding">
+                                <a href=""><p>Primaria</p></a>
+                                <ul>
+                                    <li><a href="">Matemáticas</a></li>
+                                    <li><a href="">Calculo de v.</a></li>
+                                    <li><a href="">Inglés</a></li>
+                                    <li><a href="">Ciencias sociales</a></li>
+                                    <li><a href="">Historia del Perú</a></li>
+                                    <li class="all" data-group-id="bc22e177-5789-4a07-bc6b-7a7eebfe7b64"><a><strong>Ver todas</strong></a></li>
+                                </ul>
+
+                            </div>
+                            <div class="col-md-2 col-xs-6 no-padding ">
+                                <a href=""><p>Secundaria</p></a>
+                                <ul>
+                                    <li><a href="">Matemáticas</a></li>
+                                    <li><a href="">Física</a></li>
+                                    <li><a href="">Refuerzo</a></li>
+                                    <li><a href="">Química</a></li>
+                                    <li><a href="">Inglés</a></li>
+                                    <li class="all" data-group-id="ff2a045c-9153-433e-9e4c-57f86f20dd68"><a><strong>Ver todas</strong></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 col-xs-6 no-padding">
+                                <a href=""><p>Bachillerato</p></a>
+                                <ul>
+                                    <li><a href="">Matematica para Ingeniería</a></li>
+                                    <li><a href="">Fisica Cuantica</a></li>
+                                    <li><a href="">Preparación de Tesis</a></li>
+                                    <li><a href="">Investigación de Proyectos</a></li>
+                                    <li><a href="">Inglés para Ingeniería</a></li>
+                                    <li class="all" data-group-id="c3ac2431-cb76-477a-a29d-f1563d875013"><a><strong>Ver todas</strong></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 col-xs-6 no-padding">
+                                <a href=""><p>Idiomas</p></a>
+                                <ul>
+                                    <li><a href="">Inglés</a></li>
+                                    <li><a href="">Español</a></li>
+                                    <li><a href="">Alemán</a></li>
+                                    <li><a href="">Francés</a></li>
+                                    <li><a href="">Italiano</a></li>
+                                    <li class="all" data-group-id="a2a74675-ebac-4563-8eb0-78678a8ded98"><a><strong>Ver todas</strong></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 col-xs-6 no-padding">
+                                <a href=""><p>Talleres de Música</p></a>
+
+                                <ul>
+
+                                    <li><a href="">Guitarra</a></li>
+
+                                    <li><a href="">Piano</a></li>
+
+                                    <li><a href="">Canto</a></li>
+
+                                    <li><a href="">Violín</a></li>
+
+                                    <li><a href="">Música general</a></li>
+
+                                    <li class="all" data-group-id="b30852b8-cfe3-4efc-bcaf-ac0730a03948"><a><strong>Ver todas</strong></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments">
+            <div class="container">
+                <div class="row">
+                    <h2>Miles de alumnos ya han aprobado gracias a nuestros profesores</h2>
+                </div>
+
+                <div class="col-md-12 comments-container">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="col-md-6 col-xs-6 profile">
+                            <img src="https://static.teachapp.es/webapp/assets/v2/images/t1.jpg" alt="Pedro: profesor particular en TeachMe">
+                            <p>Mario</p>
+
+                        </div>
+                        <div class="col-md-6 col-xs-6 profile">
+                            <img src="https://static.teachapp.es/webapp/assets/v2/images/t2.jpg" alt="Paola: alumna clases particulares en TeachMe">
+                            <p>Paola</p>
+                        </div>
+                        <div class="col-md-12 comment">
+                            <p class="text">"¡Excelente! Gracias a Mario he aprobado Calculo Financiero, explica muy bien y enseña ejercicios prácticos", <strong>Paola</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="col-md-6 col-xs-6 profile">
+                            <img src="https://static.teachapp.es/webapp/assets/v2/images/t4.jpg" alt="Eva: profesora particular en TeachMe">
+                            <p>Eva</p>
+
+                        </div>
+                        <div class="col-md-6 col-xs-6 profile">
+                            <img src="https://static.teachapp.es/webapp/assets/v2/images/t3.jpg" alt="Ángel: alumno clases particulares en TeachMe">
+                            <p>Ángel</p>
+                        </div>
+                        <div class="col-md-12 comment">
+                            <p class="text">"Eva es una excelente profesora en Ingles, gracias a ella obtuve mi certificación. La recomiendo, muy buena.", <strong>Ángel</strong></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 text-center" style="display: inline-block">
+                        <h4><strong>Miles de usuarios </strong> nos respaldan</h4>
+
+                        <div class="buttons b20-3" style="margin-top: 30px;">
+                            <a title="Descarga TeachMe para iOS en la App Store" href="" class="btn btn-default btn-download hvr-float-shadow">
+                                <i class="fab fa-apple" aria-hidden="true"></i>
+                                <span class="text">
+                                    <span class="little">Descarga la app </span>
+                                    <br>App Store
+                                </span>
+                            </a>
+                            <a title="Descarga TeachMe para Android en Google Play" href="" class="btn btn-default btn-download hvr-float-shadow">
+                                <i class="fab fa-android" aria-hidden="true"></i>
+                                <span class="text">
+                                    <span class="little">Descarga la app </span>
+                                    <br>Google Play
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra">
+            <div class="container">
+                <div class="row">
+                    <h2>En nuestra empreza se brinda un seguimiento de nuestros alumnos para ofrecerles el mejor profesor </h2>
+                    <h2 class="subtitle">Realizamos una validación de datos a nuestros tutores, y verificamos su perfil</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <div class="container">
+                <div class="row">
+                    <h2><strong>Entérate de más noticias en nuestras Redes Sociales:</strong>:</h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <a href="">
+                            <div class="card1">
+                                <img src="~/Images/MATEMATICA-1.jpg" alt="Ventajas de las clases particulares">
+
+                                <div class="middle">
+                                    <div class="text">Leer más</div>
+                                </div>
+
+                                <h3>Tutorias en Matematicas</h3>
+                                <p>Con las clases particulares en matematicas, el alumno no sólo mejorará en su rendimiento y resultados académicos, también estará más motivado y animado.</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <a href="">
+                            <div class="card2">
+                                <img src="~/Images/INGLES1.jpg" alt="Entrevistas a profesores de TeachMe: Álvaro">
+                                <div class="col-md-12 no-margin no-padding">
+                                    <h3>Tutorias en Ingles Básico, Intermedio, Avanzado.</h3>
+                                    <p>Leer más</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <a href="">
+                            <div class="card1">
+                                <img src="~/Images/ESTUDIANTES.jpg">
+
+                                <div class="middle">
+                                    <div class="text">Leer más</div>
+                                </div>
+
+                                <h3>Opiniones de nuestros estudiantes</h3>
+                                <p>Cada vez los estudiantes universitarios nos felicitan por nuestro sistema de enseñanza.</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="snackbar">Mensaje</div>
+
+
+
+    <div class="footer ">
+        <div class="container">
+            <div class="col-md-12 no-margin no-padding">
+
+                <div class="col-md-4 left">
+
+                    <p class="company"><strong>TALLER IV</strong> (NOMBRE DE LA EMPRESA)</p>
+
+                    <p class="phone">(NUMERO DE LLAMADA)</p>
+                    <p class="email">CORREO</p>
+                    <a href="/faqs"><p class="faqs">(FOROS)</p></a>
+
+                </div>
+
+                <div class="col-md-4 middle">
+
+
+
+
+                    <div class="buttons b20-3" style="margin-top: 10px;">
+                        <a title="Descarga el app para iOS en la App Store" href="" class="btn btn-default btn-download hvr-float-shadow">
+                            <i class="fab fa-apple" aria-hidden="true"></i>
+                            <span class="text">
+                                <span class="little">Descarga la app </span>
+                                <br>App Store
+                            </span>
+                        </a>
+                        <a title="Descarga el app  para Android en Google Play" href="" class="btn btn-default btn-download hvr-float-shadow">
+                            <i class="fab fa-android" aria-hidden="true"></i>
+                            <span class="text">
+                                <span class="little">Descarga la app </span>
+                                <br>Google Play
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-4 right">
+                    <a href=""><p class="blog">LINK 1</p></a>
+                    <a href=""><p class="blog">LINK 2</p></a>
+                    <p class="follow">LINK 3</p>
+                        <a href=""><i class="follow-item fab fa-facebook-f"></i></a>
+                        <a href=""><i class="follow-item fab fa-instagram"></i></a>
+                        <a href=""><i class="follow-item fab fa-twitter"></i></a>
+                        <a href=""><i class="follow-item fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="follow-item fab fa-youtube"></i></a>
+                        <a href=""><i class="follow-item fab fa-pinterest"></i></a>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
