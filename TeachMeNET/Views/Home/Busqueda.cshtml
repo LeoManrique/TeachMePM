@@ -1,0 +1,513 @@
+﻿
+@{
+    ViewData["Title"] = "Busqueda";
+}
+
+<div class="container tutor-list">
+
+    <div class="tutors-filter">
+        <h3 class="title">Filtrar resultados por:</h3>
+
+        <div class="col-md-12 filters">
+            <h4 class="title">Lugar de las clases</h4>
+
+
+
+
+            <p class="where" id="student_home" data-selected="true"><input type="radio" name="lugardeasesoria" value="1">  </i>Domicilio del Alumno</p>
+            <p class="where" id="tutor_home" data-selected="true"><input type="radio" name="lugardeasesoria" value="1">  </i>Estudio del Profesor</p>
+            <p class="where" id="other_place" data-selected="true"><input type="radio" name="lugardeasesoria" value="1">  Lugar público</p>
+            <p class="where" id="online" data-selected="false"><input type="radio" name="lugardeasesoria" value="1">  Web-Online</p>
+
+            <h4 class="title" style="margin-top: 25px">Disponibilidad (Días)</h4>
+
+            <div class="row schedule inverted no-padding no-margin">
+                <div class="col-xs-12 no-padding">
+                    <table class="w3-table">
+                        <tr>
+                            <th></th>
+                            <th id="morning-title" data-selected="true">Mañanas</th>
+                            <th id="afternoon-title" data-selected="true">Tardes</th>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="true" data-day="mon" style="max-width: 35px;">L</td>
+                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="true" data-day="tue" style="max-width: 35px;">M</td>
+                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="true" data-day="wed" style="max-width: 35px;">X</td>
+                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="true" data-day="thu" style="max-width: 35px;">J</td>
+                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="true" data-day="fri" style="max-width: 35px;">V</td>
+                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="false" data-day="sat" style="max-width: 35px;">S</td>
+                            <td class="schedule-period" data-period="morning" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                        <tr>
+                            <td class="title day-title" data-selected="false" data-day="sun" style="max-width: 35px;">D</td>
+                            <td class="schedule-period" data-period="morning" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
+                            <td class="schedule-period" data-period="afternoon" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9 col-md-offset-3 no-padding">
+        <div class="col-md-12 header" id="header-search">
+            <span>
+                <input type="text" class="form-control subject-search-input" placeholder="¿Qué asignatura?" value="" data-subject-id="2e92dda7-ac6a-51e1-b4c8-cff73e310662">
+                <input type="text" class="form-control subject-search-input" placeholder="¿En qué lugar te encuentras?" value="" data-subject-id="2e92dda7-ac6a-51e1-b4c8-cff73e310662">
+            </span>
+        </div>
+            <div class="col-md-12 no-padding no-margin tutors" id="tutors-container">
+
+
+                <h1>Clases particulares  de <strong>Cálculo (Ingeniería)</strong>  en Perú</h1>
+
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4369210" data-lon="2.1806423">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 1.jpg" alt="Camilo Alejandro-Profesor particular en Barcelona ">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Camilo Alejandro <span class="ocupation">(Físico)</span></h3>
+
+
+                                <div class="description">
+                                    Soy un profesor comprometido y dedicado, me esfuerzo mucho en que mis clases sean didácticas y divertidas. Soy físico y actualmente estoy realizando mi doctorado en la UAB. Tengo una experiencia de 8 años en clases particulares tanto a nivel universitario como de secundaria. Si necesitas ayuda con las matemáticas o asombrarte con un poco de física, con migo tienes una gran elección.
+
+
+
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"><span class="distance">Barcelona</span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 2h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit"> En cualquier lugar</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/.18/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4083076" data-lon="2.1720423">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 2.jpg">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Lorena <span class="ocupation">(Ingeniera)</span></h3>
+
+
+                                <div class="description">
+                                    Estudiante de último año en ingeniería de Telecomunicaciones. Interesada en dar clases de bachillerato. 4 años de experiencia en clases particulares.
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"></i><span class="distance"></span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 24h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit"> Se desplaza a tu casa</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/.13/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4065778" data-lon="2.1385736">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 4.jpg" " alt="Herminia-Profesor particular en Barcelona ">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Herminia <span class="ocupation">(Física)</span></h3>
+
+
+                                <div class="description">
+                                    ¡Hola! Soy Herminia, me encanta dar clases a cualquier persona que tenga interés en aprender cosas nuevas.
+
+                                    Soy licenciada en Física. Completé mi carrera universitaria en la Universidad San Marcos y por esta razón también tengo un nivel muy alto de Mátematicas
+
+                                    Ofrezco clases de Matemáticas, Inglés y Física. También de Ciéncias Naturales, pero a un nivel mas bajo.
+
+                                    He ayudado a niños, adolescentes y a amigos a formarse en estas materias siempre de una manera agradable y con sonrisas :)
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"></i><span class="distance">Barcelona</span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 5h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit">> En cualquier lugar</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/.15/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4000015" data-lon="2.1500001">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 5.jpg" alt="Xosé-Profesor particular en Barcelona ">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Xosé <span class="ocupation">(Ingeniero)</span></h3>
+
+
+                                <div class="description">
+                                    Me llamo Xosé, soy un chico de Trujillo viviendo en Lima y actualmente estudio mi 7mo Ciclo de la carrera de Ingeniería Informática en la Universidad de Lima
+                                    Desde siempre me ha encantado ayudar a los demás a estudiar y hace ya 2 años que imparto clases particulares de MATEMATICAS principalmente a mi hermana pequeña y a alumnos universitarios.
+                                    Me encanta enseñar y sobretodo ver el progreso del alumno, más aún cuando entiende el temario y lo pone en práctica con cabeza y no por simple repetición.
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"></i><span class="distance">Barcelona</span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 24h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit"> En cualquier lugar</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/.10/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.3888321" data-lon="2.1425693">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 8.jpg" alt="Marc-Profesor particular  en TeachApp ">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Marc <span class="ocupation">(Ingeniero de Sistemas)</span></h3>
+
+                                <div class="description">
+                                    Soy tutor de la Universidad San Ignacio de Loyola, Tengo 4 años enseñando cursos de docencia matematica. Dicto mis tutorias de forma Teorica/Práctica, contactame.
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"></i><span class="distance"></span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 24h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit"> En cualquier lugar</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/.17/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.3888317" data-lon="2.1425692">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 7.jpg" alt="Daniel-Profesor particular en Barcelona ">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Daniel <span class="ocupation">(Ingeniero)</span></h3>
+
+
+
+
+                                <div class="description">
+                                    Daniel, estudiante de ingeniería dispuesto a dar clases, de primaria a universidad. Experiencia dando clases de 2 años (12 alumnos). Experiencia laboral en operativa de bancos y programación.
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"></i><span class="distance">Barcelona</span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 2h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit"> Se desplaza a tu casa</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/.12/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="" target="_blank">
+                    <div class="col-md-12 no-padding no-margin tutor" data-lat="41.3847313" data-lon="2.1609876">
+                        <div class="col-md-3 col-lg-2">
+                            <img class="avatar" src="~/Images/Busqueda/profe 6.jpg" alt="Albert-Profesor particular en Barcelona ">
+
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <div class="data-l">
+                                <h3 class="name">Albert <span class="ocupation">(Ingeniero Quimico)</span></h3>
+
+
+                                <div class="description">
+                                    Ingeniero Químico y politóligo de estudios, docente e Ing Quimico de profesion.
+                                    5 años dando clases de todo nivel y edad, tanto particulares como de grupo.
+                                </div>
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"><span class="distance"> Lima</span></span>
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/reloj.jpg" alt="Submit"> Responde en 24h</span>
+
+
+                                <span class="feature mobile"><input type="image" src="~/Images/Busqueda/logomapa.jps" alt="Submit"> En cualquier lugar</span>
+
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                            <div class="price">
+                                <div class="no-padding no-margin">
+                                    <div class="col-xs-12 no-padding price">
+                                        <h3 style="margin-top: 20px">Desde</h3>
+                                        <h3><strong>S/10/h</strong></h3>
+                                    </div>
+                                    <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                        <button type="button" class="btn btn-primary">
+                                            Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+                <div class="col-md-12 text-center" style="margin-bottom: 60px;">
+                    <h2>Clases particulares  de <strong>Cálculo (Ingeniería)</strong>  en Perú </h2>
+
+                    <p>Hemos encontrado 7 Tutores para tus <strong>clases particulares</strong>  de <strong>Cálculo (Ingeniería)</strong>  en Perú, pero cada día seguimos buscando e incorporando más para ofrecerte a los mejores Tutores.</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+<script src="~/Js/Shared/jquery.min.js"></script>
+<script type="text/javascript" src="~/Js/Shared/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyABywB9XDVck3KVTiR620yuULmGQnsFUmY&libraries=places,geometry"></script>
+<script type="text/javascript" src="~/Js/Shared/conversion_async.js"></script>
+
+<script>
+    (function () {
+        $(".subject-search-input").focus(function() {
+           $(document).trigger('showModalSubjects',[undefined,undefined]);
+        });
+
+        $(".subject-search-input").click(function() {
+            $(document).trigger('showModalSubjects',[undefined,undefined]);
+        });
+
+        $(".all").click(function () {
+            var group_id = $(this).attr("data-group-id");
+           $(document).trigger('showModalSubjects',[group_id,undefined]);
+        });
+
+        var subject_id = '' || undefined;
+        var group_id = '' || undefined;
+        var tutor_id = '' || undefined;
+
+        $("#contact-form").submit(function( event ) {
+            if(subject_id==undefined){
+                event.preventDefault();
+                $(document).trigger('showModalSubjects',[group_id,tutor_id]);
+
+                $(document).on('data-attribute-changed', function(event,subject_id_v,group_id) {
+                    subject_id = subject_id_v;
+                    $("#contact-form").submit();
+                });
+            }
+        });
+    })();
+</script>
+
+<script type="text/javascript" src="~/Js/Busqueda/575935f2b489265bf2e356ece198364c.min.js"></script>
+
+<script type="text/javascript" src="~/Js/Busqueda/helpcrunch.js"></script>
+
+
+
+<script async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};gapi.load('auth2')"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+
+<script>
+        (function () {
+            $("#navbar-btn-search").hide();
+            $(window).scroll(function (event) {
+                if(window.scrollY<80){
+                    $("#navbar-search").hide();
+                    $(".navbar-header").show();
+                    $(".navbar-right").show();
+                }else{
+                    $("#navbar-search").show();
+                    $(".navbar-header").hide();
+                    $(".navbar-right").hide();
+                }
+
+                var filterBottom = $('.tutors-filter').outerHeight();
+
+                var scrollTop     = $(window).scrollTop(),
+                    elementOffset = $('.footer').offset().top,
+                    distance      = (elementOffset - scrollTop) - 50;
+
+                var diff = distance-filterBottom;
+                $(".tutors-filter").css("top", Math.min(0, diff));
+
+            });
+
+            $(document).trigger('execute-geocode-on-inputs');
+
+        })();
+</script>
