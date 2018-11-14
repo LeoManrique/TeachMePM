@@ -93,5 +93,29 @@ namespace TeachMeNET.Controllers
 				return View();
 		}
 
-	}
+
+        public IActionResult PerfilAlumno()
+        {
+            if (ViewBag.Id == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View();
+            }
+        }
+        public IActionResult PerfilProfesor()
+        {
+            if (ViewBag.Id == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View();
+            }
+               
+        }
+    }
 }
