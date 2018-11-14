@@ -10,7 +10,6 @@ namespace TeachMeNET.Controllers
 {
     public class BaseController : Controller
     {
-
         public override void OnActionExecuting(ActionExecutingContext context)
         {
 			var id = HttpContext.Session.GetInt32("Id");
