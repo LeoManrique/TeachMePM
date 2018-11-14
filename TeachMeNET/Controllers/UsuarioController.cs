@@ -121,7 +121,16 @@ namespace TeachMeNET.Controllers
                                 .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
                                 .ToList()
                                 .FirstOrDefault();
-
+                if (profesores == null)
+                {
+                    var profesor = new Teacher();
+                    profesor.UserId = (int) HttpContext.Session.GetInt32("Id");
+                    _context.Add(profesor);
+                    _context.SaveChanges();
+                } else
+                {
+                    ViewBag.City = profesores.City;
+                }
                 return View();
             }   
                
