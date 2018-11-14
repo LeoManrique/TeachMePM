@@ -59,13 +59,16 @@
                         </div>
                         <div class="form-group text-left">
                             @{
-                                if (ViewBag.ToHouse)
+                                if (ViewBag.ToHouse != null)
                                 {
-                                @Html.CheckBoxFor(x => x.ToHouse, new { @checked = "checked" })
+                                    if (ViewBag.ToHouse)
+                                    {
+                                        @Html.CheckBoxFor(x => x.ToHouse, new { @checked = "checked" })
+                                    }
                                 }
                                 else
                                 {
-                                @Html.CheckBoxFor(x => x.ToHouse)
+                                    @Html.CheckBoxFor(x => x.ToHouse)
                                 }
                             }
                             <label asp-for="ToHouse"> A domicilio</label>
@@ -73,9 +76,12 @@
                         </div>
                         <div class="form-group text-left">
                             @{
-                                if (ViewBag.MyHouse)
+                                if (ViewBag.MyHouse != null)
                                 {
-                                    @Html.CheckBoxFor(x => x.MyHouse, new { @checked = "checked" })
+                                    if (ViewBag.MyHouse)
+                                    {
+                                        @Html.CheckBoxFor(x => x.MyHouse, new { @checked = "checked" })
+                                    }
                                 }
                                 else
                                 {
@@ -87,9 +93,12 @@
                         </div>
                         <div class="form-group text-left">
                             @{
-                                if (ViewBag.PublicSpace)
+                                if (ViewBag.PublicSpace != null)
                                 {
-                                    @Html.CheckBoxFor(x => x.PublicSpace, new { @checked = "checked" })
+                                    if (ViewBag.PublicSpace)
+                                    {
+                                        @Html.CheckBoxFor(x => x.PublicSpace, new { @checked = "checked" })
+                                    }
                                 }
                                 else
                                 {
@@ -101,9 +110,12 @@
                         </div>
                         <div class="form-group text-left">
                             @{
-                                if (ViewBag.Online)
+                                if (ViewBag.Online != null)
                                 {
-                                    @Html.CheckBoxFor(x => x.Online, new { @checked = "checked" })
+                                    if (ViewBag.Online)
+                                    {
+                                        @Html.CheckBoxFor(x => x.Online, new { @checked = "checked" })
+                                    }
                                 }
                                 else
                                 {

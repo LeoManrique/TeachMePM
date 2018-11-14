@@ -84,7 +84,13 @@
         <div class="col-md-12 mt-5 no-padding no-margin tutors" id="tutors-container">
 
 
-            <h1 class="mt-5">Clases particulares  de <strong>Cálculo (Ingeniería)</strong>  en Perú</h1>
+            <h1 class="mt-5">Clases particulares:
+                                                    <strong>@ViewBag.Curso</strong>
+                                                    @if (ViewBag.Lugar != "")
+                                                    {
+                                                    <span>en @ViewBag.Lugar</span>
+                                                    }
+                                                    </h1>
 
 
 
@@ -96,7 +102,7 @@
             <a href="" target="_blank">
                 <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4369210" data-lon="2.1806423">
                     <div class="col-md-3 col-lg-2">
-                        <img class="avatar" src="~/Images/Busqueda/profe 1.jpg" alt="@i[0] @i[1] - Profesor particular en  ">
+                        <img class="avatar" src="~/Images/Busqueda/profe 1.png" alt="@i[0] @i[1] - Profesor particular en  ">
 
 
                     </div>

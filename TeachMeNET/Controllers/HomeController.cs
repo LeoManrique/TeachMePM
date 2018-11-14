@@ -67,8 +67,9 @@ namespace TeachMeNET.Controllers
                 person.Add(list);
             }
 
-            ViewBag.Personas = person; 
-
+            ViewBag.Personas = person;
+            ViewBag.Curso = HttpContext.Request.Query["curso"].ToString();
+            ViewBag.Lugar = HttpContext.Request.Query["lugar"].ToString();
             return View();
         }
 
