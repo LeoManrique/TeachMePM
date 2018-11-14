@@ -9,7 +9,7 @@ using TeachMeNET.Models;
 namespace TeachMeNET.Migrations
 {
     [DbContext(typeof(TeachMeContext))]
-    [Migration("20181114074226_agregado_students_categories_topics")]
+    [Migration("20181114074639_agregado_students_categories_topics")]
     partial class agregado_students_categories_topics
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
