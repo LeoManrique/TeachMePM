@@ -7,16 +7,16 @@
 
 <div class="text-center mt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row mt-5">
+            <div class="col-md-12 mt-5">
                 <section>
                     <form asp-controller="Usuario" asp-action="Registro" method="post">
-                        <h4>Registrarse</h4>
+                        <h4>Registro</h4>
                         <hr />
                         <div asp-validation-summary="All" class="text-danger">
                             @Html.ValidationSummary()
                         </div>
-                        
+
 
                         <div class="form-group text-left">
                             <label asp-for="UserName">UserName</label>
@@ -47,9 +47,9 @@
                             <span asp-validation-for="Input.Password" class="text-danger"></span>
                         </div>
 
-                        
 
-                        
+
+
 
 
 
