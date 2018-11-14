@@ -3,6 +3,8 @@
     ViewData["Title"] = "Perfil como Profesor";
 }
 
+@model TeachMeNET.Models.Entities.Teacher
+
 <div class="text-center mt-5">
     <div class="container">
         <div class="row mt-5">
@@ -12,6 +14,117 @@
 
                         <h4>Mi Perfil</h4>
 
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group text-left">
+                                    <label asp-for="Country">País</label>
+                                    <input asp-for="Country" class="form-control" value="@ViewBag.Country" />
+                                    <span asp-validation-for="Country" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group text-left">
+                                    <label asp-for="City">Ciudad</label>
+                                    <input asp-for="City" class="form-control" value="@ViewBag.City" />
+                                    <span asp-validation-for="City" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group text-left">
+                                    <label asp-for="Topic1">Curso que enseña</label>
+                                    <input asp-for="Topic1" class="form-control" value="@ViewBag.Topic1"/>
+                                    <span asp-validation-for="Topic1" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group text-left">
+                                    <label asp-for="Price1">Precio por hora (soles)</label>
+                                    <input type="number" asp-for="Price1" class="form-control" value="@ViewBag.Price1"/>
+                                    <span asp-validation-for="Price1" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-left">
+                            <label asp-for="LinkedIn">Perfil de Linkedin</label>
+                            <input asp-for="LinkedIn" class="form-control" value="@ViewBag.LinkedIn"/>
+                            <span asp-validation-for="LinkedIn" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label asp-for="AboutMe">Sobre tí</label>
+                            <textarea asp-for="AboutMe" class="form-control"></textarea>
+                            <span asp-validation-for="AboutMe" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            @{
+                                if (ViewBag.ToHouse != null)
+                                {
+                                    if (ViewBag.ToHouse)
+                                    {
+                                        @Html.CheckBoxFor(x => x.ToHouse, new { @checked = "checked" })
+                                    }
+                                }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.ToHouse)
+                                }
+                            }
+                            <label asp-for="ToHouse"> A domicilio</label>
+                            <span asp-validation-for="ToHouse" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            @{
+                                if (ViewBag.MyHouse != null)
+                                {
+                                    if (ViewBag.MyHouse)
+                                    {
+                                        @Html.CheckBoxFor(x => x.MyHouse, new { @checked = "checked" })
+                                    }
+                                }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.MyHouse)
+                                }
+                            }
+                            <label asp-for="MyHouse">En domicilio propio</label>
+                            <span asp-validation-for="MyHouse" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            @{
+                                if (ViewBag.PublicSpace != null)
+                                {
+                                    if (ViewBag.PublicSpace)
+                                    {
+                                        @Html.CheckBoxFor(x => x.PublicSpace, new { @checked = "checked" })
+                                    }
+                                }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.PublicSpace)
+                                }
+                            }
+                            <label asp-for="PublicSpace">Lugar público</label>
+                            <span asp-validation-for="PublicSpace" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            @{
+                                if (ViewBag.Online != null)
+                                {
+                                    if (ViewBag.Online)
+                                    {
+                                        @Html.CheckBoxFor(x => x.Online, new { @checked = "checked" })
+                                    }
+                                }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.Online)
+                                }
+                            }
+                            <label asp-for="Online">Clases online</label>
+                            <span asp-validation-for="Online" class="text-danger"></span>
+                        </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Actualizar</button>
                         </div>
@@ -21,3 +134,7 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.getElementById("AboutMe").innerHTML = "@ViewBag.AboutMe";
+</script>
