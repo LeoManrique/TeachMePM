@@ -30,7 +30,8 @@ namespace TeachMeNET.Controllers
             if (ModelState.IsValid)
             {
                 //TempData["usuario"] = model;
-                if (1 == 1)
+                var existeUsuario = _context.InicioSesiones.Any(u => u.Email == model.Input.Email);
+                if (!existeUsuario)
                 {
                     //User usuario = TempData["usuario"] as User;
                     if (model == null)
@@ -45,6 +46,8 @@ namespace TeachMeNET.Controllers
                     HttpContext.Session.SetString("FirstName", model.Name1);
                     HttpContext.Session.SetString("LastName", model.LastName1);
                     return RedirectToAction("Index", "Home");
+                }else{
+                     ModelState.AddModelError("Incorrecto", "El correo ya existe");
                 }
             }
             //return RedirectToAction("Registro");
@@ -72,7 +75,7 @@ namespace TeachMeNET.Controllers
                                 .FirstOrDefault(u => u.Email == inicio.Email && u.Password == inicio.Password);
 
                 if (usuario == null) {
-                    ModelState.AddModelError("Incorrecto", "contraseña incorrecta");
+                    ModelState.AddModelError("Incorrecto", "contraseña o correo incorrecta");
                     
                 }
                 else {
