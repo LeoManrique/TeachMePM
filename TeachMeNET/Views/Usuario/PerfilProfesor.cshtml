@@ -3,6 +3,8 @@
     ViewData["Title"] = "Perfil como Profesor";
 }
 
+@model TeachMeNET.Models.Entities.Teacher
+
 <div class="text-center mt-5">
     <div class="container">
         <div class="row mt-5">
@@ -11,7 +13,26 @@
                     <form asp-controller="Usuario" asp-action="PerfilProfesor" method="post">
 
                         <h4>Mi Perfil</h4>
-
+                        <div class="form-group text-left">
+                            <label asp-for="Country">País</label>
+                            <input asp-for="Country" class="form-control" />
+                            <span asp-validation-for="Country" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label asp-for="City">Ciudad</label>
+                            <input asp-for="City" class="form-control" />
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label asp-for="LinkedIn">Perfil de Linkedin</label>
+                            <input asp-for="LinkedIn" class="form-control" />
+                            <span asp-validation-for="LinkedIn" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label asp-for="ToHouse">A domicilio</label>
+                            <input type="checkbox" asp-for="ToHouse" class="form-control" />
+                            <span asp-validation-for="ToHouse" class="text-danger"></span>
+                        </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Actualizar</button>
                         </div>

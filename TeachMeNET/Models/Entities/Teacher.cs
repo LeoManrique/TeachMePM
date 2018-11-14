@@ -13,10 +13,10 @@ namespace TeachMeNET.Models.Entities
         public string Degree { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public int ToHouse { get; set; }
-        public int MyHouse { get; set; }
-        public int PublicSpace { get; set; }
-        public int Online { get; set; }
+        public Boolean ToHouse { get; set; }
+        public Boolean MyHouse { get; set; }
+        public Boolean PublicSpace { get; set; }
+        public Boolean Online { get; set; }
 
         public string LinkedIn { get; set; }
         public string AboutMe { get; set; }
