@@ -15,9 +15,14 @@ namespace TeachMeNET.Controllers
 			var id = HttpContext.Session.GetInt32("Id");
 
 			var username = HttpContext.Session.GetString("UserName");
+            var nombre = HttpContext.Session.GetString("FirstName");
+            var apellido = HttpContext.Session.GetString("LastName");
 
             ViewBag.Nombre = username;
 			ViewBag.Id = id;
-		}
+            ViewBag.UName = nombre;
+            ViewBag.ULastName = apellido;
+
+        }
     }
 }

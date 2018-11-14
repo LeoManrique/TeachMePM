@@ -54,7 +54,7 @@
                         </div>
                         <div class="form-group text-left">
                             <label asp-for="AboutMe">Sobre tí</label>
-                            <textarea asp-for="AboutMe" class="form-control"></textarea>
+                            <textarea maxlength="200" asp-for="AboutMe" class="form-control"></textarea>
                             <span asp-validation-for="AboutMe" class="text-danger"></span>
                         </div>
                         <div class="form-group text-left">
@@ -69,6 +69,10 @@
                                     {
                                         @Html.CheckBoxFor(x => x.ToHouse)
                                     }
+                                }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.ToHouse)
                                 }
 
                             }
@@ -88,6 +92,10 @@
                                         @Html.CheckBoxFor(x => x.MyHouse)
                                     }
                                 }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.MyHouse)
+                                }
 
                             }
                             <label asp-for="MyHouse">En domicilio propio</label>
@@ -106,6 +114,10 @@
                                         @Html.CheckBoxFor(x => x.PublicSpace)
                                     }
                                 }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.PublicSpace)
+                                }
 
                             }
                             <label asp-for="PublicSpace">Lugar público</label>
@@ -123,6 +135,10 @@
                                     {
                                         @Html.CheckBoxFor(x => x.Online)
                                     }
+                                }
+                                else
+                                {
+                                    @Html.CheckBoxFor(x => x.Online)
                                 }
 
                             }
