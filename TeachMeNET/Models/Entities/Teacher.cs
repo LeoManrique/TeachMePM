@@ -24,13 +24,13 @@ namespace TeachMeNET.Models.Entities
         public string AboutMe { get; set; }
 
         public string Topic1 { get; set; }
-        public Decimal Price1 { get; set; }
+        public int Price1 { get; set; }
         public string Topic2 { get; set; }
-        public Decimal Price2 { get; set; }
+        public int Price2 { get; set; }
         public string Topic3 { get; set; }
-        public Decimal Price3 { get; set; }
+        public int Price3 { get; set; }
         public string Topic4 { get; set; }
-        public Decimal Price4 { get; set; }
+        public int Price4 { get; set; }
 
     }
 }

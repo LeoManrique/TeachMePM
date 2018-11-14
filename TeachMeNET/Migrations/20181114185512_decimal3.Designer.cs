@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TeachMeNET.Models;
 
 namespace TeachMeNET.Migrations
 {
     [DbContext(typeof(TeachMeContext))]
-    partial class TeachMeContextModelSnapshot : ModelSnapshot
+    [Migration("20181114185512_decimal3")]
+    partial class decimal3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,13 +62,13 @@ namespace TeachMeNET.Migrations
 
                     b.Property<bool>("Online");
 
-                    b.Property<int>("Price1");
+                    b.Property<decimal>("Price1");
 
-                    b.Property<int>("Price2");
+                    b.Property<decimal>("Price2");
 
-                    b.Property<int>("Price3");
+                    b.Property<decimal>("Price3");
 
-                    b.Property<int>("Price4");
+                    b.Property<decimal>("Price4");
 
                     b.Property<bool>("PublicSpace");
 
