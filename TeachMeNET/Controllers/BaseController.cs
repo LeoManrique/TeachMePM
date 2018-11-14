@@ -13,12 +13,9 @@ namespace TeachMeNET.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-			var id = HttpContext.Session.GetString("Id");
+            var usuario = HttpContext.Session.GetString("UserName");
 
-			var username = HttpContext.Session.GetString("UserName");
-
-            ViewBag.Nombre = username;
-			ViewBag.Id = id;
-		}
+            ViewBag.Nombre = usuario;
+        }
     }
 }
