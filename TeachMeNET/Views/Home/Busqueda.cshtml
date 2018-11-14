@@ -148,7 +148,12 @@
 
             <div class="col-md-12 text-center" style="margin-bottom: 60px;">
 
-                <p>Hemos encontrado tutores para tus <strong>clases particulares</strong>  de <strong>Cálculo (Ingeniería)</strong>  en Perú, pero cada día seguimos buscando e incorporando más para ofrecerte a los mejores Tutores.</p>
+                <p>
+                    Ellos son los tutores para tus <strong>clases particulares</strong>  de <strong>@ViewBag.Curso</strong>@if (ViewBag.Lugar != "")
+                    {
+                        <span> en @ViewBag.Lugar</span>
+                    }. Cada día seguimos buscando e incorporando más para ofrecerte a los mejores tutores.
+                </p>
 
             </div>
 
