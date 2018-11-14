@@ -24,9 +24,11 @@ namespace TeachMeNET.Controllers
         public IActionResult Busqueda()
         {
             var teachers = _context
-                                .Teachers;
+                                .Teachers
+                                .ToList();
             var users = _context
-                                .Users;
+                                .Users
+                                .ToList();
 
             var personas = teachers.Join(users,
                             teacher => teacher.UserId,
@@ -42,9 +44,30 @@ namespace TeachMeNET.Controllers
                                 Price = teacher.Price1,
 
                             }
-                            ).GroupBy(record => record.UserId);
+                            )
+                            .FirstOrDefault();
 
-            ViewBag.Personas = personas; 
+            var people = _context
+                                .Teachers
+                                .Join(_context.Users, teacher => teacher.UserId, user => user.Id,
+                                (teacher, user) => new
+                                { teacher, user } );
+            List<List<Object>> person = new List<List<Object>>();
+            foreach (var i in people)
+            {
+                List<Object> list = new List<Object>();
+                list.Add(i.user.Name1);
+                list.Add(i.user.LastName1);
+                list.Add(i.user.Id);
+                list.Add(i.teacher.Country);
+                list.Add(i.teacher.City);
+                list.Add(i.teacher.AboutMe);
+                list.Add(i.teacher.Topic1);
+                list.Add(i.teacher.Price1);
+                person.Add(list);
+            }
+
+            ViewBag.Personas = person; 
 
             return View();
         }
