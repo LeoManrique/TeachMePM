@@ -36,5 +36,6 @@ namespace TeachMeNET.Models
 
         public DbSet<User> Users { get; set; }
         public DbSet<InicioSesionModel> InicioSesiones { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
     }
 }

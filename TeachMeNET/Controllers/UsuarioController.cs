@@ -40,7 +40,6 @@ namespace TeachMeNET.Controllers
                     HttpContext.Session.SetString("UserName", model.Name1);
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError("Incorrecto", "El usuario ya se encuentra en la bd");
             }
             //return RedirectToAction("Registro");
             return View(model);
@@ -58,7 +57,10 @@ namespace TeachMeNET.Controllers
                 
                 //aqui obtienes la lista de logins
                 //var existeUsuario = _context.InicioSesiones.Any(u => u.Email == inicio.Email && u.Password == inicio.Password); //para ver si hay alguno que cumple con la condicion
-                var usuario = _context.InicioSesiones.Include(i => i.User).FirstOrDefault(u => u.Email == inicio.Email && u.Password == inicio.Password);
+                var usuario = _context
+                                .InicioSesiones
+                                .Include(i => i.User)
+                                .FirstOrDefault(u => u.Email == inicio.Email && u.Password == inicio.Password);
 
                 if (usuario == null) {
                     ModelState.AddModelError("Incorrecto", "contraseña incorrecta");
@@ -107,12 +109,14 @@ namespace TeachMeNET.Controllers
         }
         public IActionResult PerfilProfesor()
         {
+
             if (ViewBag.Id == null)
             {
                 return RedirectToAction("Index", "Home");
             }
             else
             {
+
                 return View();
             }
                

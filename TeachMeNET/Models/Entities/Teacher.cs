@@ -18,6 +18,9 @@ namespace TeachMeNET.Models.Entities
         public int PublicSpace { get; set; }
         public int Online { get; set; }
 
+        public string LinkedIn { get; set; }
+        public string AboutMe { get; set; }
+
         public string Topic1 { get; set; }
         public int Price1 { get; set; }
         public string Topic2 { get; set; }
