@@ -5182,7 +5182,7 @@ th.visible-print, td.visible-print {
     color: #194258;
 }
 .green {
-    color: #32b7ae;
+    color: #194258;
 }
 body {
     font-family: "Open Sans"}
@@ -5228,33 +5228,33 @@ body {
     left: .5em;
     margin-right: -50%}
 .btn-green {
-    background-color: #32b7ae;
+	background-color: #aeb5b9;
 }
 .navbar-btn.tutors {
-    background-color: #32b7ae;
-    color: white;
-    height: 34px;
-    border-radius: 17px;
-    font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
+	background-color: #aeb5b9;
+	color: white;
+	height: 34px;
+	border-radius: 17px;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: none;
 }
 .navbar-btn.tutors:hover {
     opacity: .9;
 }
-.navbar-btn.tutors.inverted {
-    background-color: transparent;
-    color: #32b7ae;
-    border: 1px solid #32b7ae;
-}
-.navbar-btn.tutors.inverted:hover {
-    background-color: #32b7ae;
-    color: white;
-    border: 1px solid #32b7ae;
-}
+	.navbar-btn.tutors.inverted {
+		background-color: transparent;
+		color: #aeb5b9;
+		border: 1px solid #aeb5b9;
+	}
+		.navbar-btn.tutors.inverted:hover {
+			background-color: #aeb5b9;
+			color: white;
+			border: 1px solid #aeb5b9;
+		}
 .btn-contact {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     border-radius: 22px;
     width: 100%;
@@ -5310,12 +5310,12 @@ body {
     border: none;
 }
 .form-control:focus {
-    border-color: #32b7ae;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #32b7ae;
+    border-color: #194258;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #194258;
 }
 .btn-download {
     color: #FFF;
-    background: #32b7ae;
+    background: #194258;
     border-radius: 10px;
     font-size: 30px;
     display: inline-block;
@@ -5339,8 +5339,8 @@ body {
 }
 .btn-download:hover {
     background-color: white;
-    color: #32b7ae;
-    border: 1px solid #32b7ae;
+    color: #194258;
+    border: 1px solid #194258;
 }
 .pac-container {
     z-index: 1051 !important;
@@ -5378,7 +5378,7 @@ body {
     background-color: red;
 }
 #snackbar.succeed {
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 #snackbar.show {
     visibility: visible;
@@ -5512,7 +5512,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media screen and (max-width:1199px) {
     .navbar-default .navbar-search {
@@ -5553,10 +5553,10 @@ to {
     margin-left: 58px;
 }
 .navbar-default .navbar-brand a:hover .teachapp {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-default .navbar-brand a:hover .slogan {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-default .navbar-brand img {
     max-width: 40px;
@@ -5655,10 +5655,10 @@ to {
     margin-left: 58px;
 }
 .navbar-brand.mobile a:hover .teachapp {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-brand.mobile a:hover .slogan {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-brand.mobile img {
     max-width: 40px;
@@ -5754,8 +5754,8 @@ to {
     font-size: 18px;
 }
 .footer .follow-item:hover {
-    color: #32b7ae;
-    border-color: #32b7ae;
+    color: #194258;
+    border-color: #194258;
 }
 .footer .phone {
     margin-top: 5px;
@@ -5793,7 +5793,7 @@ to {
     margin-top: 7px;
 }
 .footer .blog:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
     text-decoration: none;
 }
 .footer p {
@@ -5809,7 +5809,7 @@ to {
     float: none;
 }
 }.footer .terms:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
     text-decoration: none;
 }
 .footer .faqs {
@@ -5818,7 +5818,7 @@ to {
     margin-bottom: 6px;
 }
 .footer .faqs:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
     text-decoration: none;
 }
 .footer .follow {
@@ -5828,7 +5828,7 @@ to {
     margin-top: 10px;
 }
 .footer .btn-download {
-    background: #32b7ae;
+    background: #194258;
     border-radius: 10px;
     font-size: 30px;
     display: inline-block;
@@ -5855,8 +5855,8 @@ to {
     text-transform: none;
 }
 .footer .btn-download:hover {
-    color: #32b7ae;
-    border: 1px solid #32b7ae;
+    color: #194258;
+    border: 1px solid #194258;
 }
 .footer-mobile-contact-btn {
     position: fixed;
@@ -5895,7 +5895,7 @@ to {
     margin-right: 3px;
 }
 .footer-mobile .filter.open .where .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .footer-mobile .filter.open .schedule.inverted table th {
     font-size: 14px;
@@ -5951,7 +5951,7 @@ to {
     padding: 0 0 0 0;
 }
 .profile .data .list .price {
-    color: #32b7ae;
+    color: #194258;
     font-size: 19px;
     padding-left: 10px;
     padding-right: 10px;
@@ -6141,7 +6141,7 @@ to {
     margin-bottom: 5px;
 }
 .profile-mobile .data .list .price {
-    color: #32b7ae;
+    color: #194258;
     font-size: 17px;
     font-weight: bold;
     margin-top: 0;
@@ -6159,7 +6159,7 @@ to {
 }
 .profile-mobile #description a {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -6179,7 +6179,7 @@ to {
     font-size: 13px;
     background-color: white;
     text-align: right;
-    color: #32b7ae;
+    color: #194258;
     margin-top: 4px;
     margin-bottom: 5px;
 }
@@ -6239,7 +6239,7 @@ to {
 }
 .profile-mobile .other-subjects .read-more {
     text-align: right;
-    color: #32b7ae;
+    color: #194258;
     margin-top: -5px;
     margin-right: 3px;
     font-size: 13px;
@@ -6285,7 +6285,7 @@ to {
 }
 .other-subjects #subjects a {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -6439,7 +6439,7 @@ to {
     font-size: 12px;
 }
 .schedule.inverted table td .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .schedule.inverted table .title {
     color: white;
@@ -6478,7 +6478,7 @@ to {
 }
 #opinions-p a {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -6549,12 +6549,12 @@ to {
 }
 .opinions .more {
     text-align: right;
-    color: #32b7ae;
+    color: #194258;
     font-size: 14px;
 }
 .opinions .more {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -6672,7 +6672,7 @@ to {
     font-size: 23px;
 }
 .tutor-list .tutor button {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     padding: 6px 12px;
     font-size: 16px;
@@ -6793,7 +6793,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
     margin-top: -4px;
     margin-left: 5px;
 }
@@ -6917,7 +6917,7 @@ to {
     font-size: 23px;
 }
 .tutor-list-mobile .tutor button {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     padding: 6px 12px;
     font-size: 16px;
@@ -7124,10 +7124,10 @@ to {
     margin-right: 10px;
 }
 .tutors-filter .filters .where .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .where:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule {
     margin-top: 25px;
@@ -7192,7 +7192,7 @@ to {
     font-size: 12px;
 }
 .tutors-filter .filters .schedule table td .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table .title {
     color: white;
@@ -7206,7 +7206,7 @@ to {
     font-size: 14px;
 }
 .tutors-filter .filters .schedule table th:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table tr {
     padding-top: 3px;
@@ -7219,10 +7219,10 @@ to {
     font-size: 14px;
 }
 .tutors-filter .filters .schedule table td i:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table td:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table .title {
     font-size: 14px;
@@ -7284,7 +7284,7 @@ to {
     padding: 0 0 0 0;
 }
 .register-page .profile .data .list .price {
-    color: #32b7ae;
+    color: #194258;
     font-size: 19px;
     padding-left: 10px;
     padding-right: 10px;
@@ -7349,13 +7349,13 @@ to {
     font-weight: bold;
 }
 .navbar .register-container .register:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .navbar .register-container .form-group {
     margin-bottom: 12px;
 }
 .navbar .register-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -7382,7 +7382,7 @@ to {
 }
 .navbar .register-container .forgot-pass:hover {
     text-decoration: none;
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar .register-container p {
     color: #194258;
@@ -7405,7 +7405,7 @@ to {
     margin-top: 30px;
 }
 }.navbar .register-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -7429,13 +7429,13 @@ to {
     font-weight: bold;
 }
 .register-container .register:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .register-container .form-group {
     margin-bottom: 12px;
 }
 .register-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -7462,7 +7462,7 @@ to {
 }
 .register-container .forgot-pass:hover {
     text-decoration: none;
-    color: #32b7ae;
+    color: #194258;
 }
 .register-container p {
     color: #194258;
@@ -7498,13 +7498,13 @@ to {
     font-weight: bold;
 }
 .phone-container .register:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .phone-container .form-group {
     margin-bottom: 12px;
 }
 .phone-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -7531,7 +7531,7 @@ to {
 }
 .phone-container .forgot-pass:hover {
     text-decoration: none;
-    color: #32b7ae;
+    color: #194258;
 }
 .phone-container p {
     color: #194258;
@@ -7593,7 +7593,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .landing .hero .btn-search {
@@ -7621,7 +7621,7 @@ to {
 }
 .landing .hero .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -7671,7 +7671,7 @@ to {
     font-family: "Montserrat"}
 .landing .chat h2 {
     margin: 0;
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
 }
@@ -7694,7 +7694,7 @@ to {
     font-size: 16px;
 }
 }.landing .chat h3 strong {
-    color: #32b7ae;
+    color: #194258;
 }
 .landing .chat .profile {
     margin: 0;
@@ -7849,9 +7849,8 @@ to {
     color: #194258;
 }
 .landing .subjects {
-    background: linear-gradient(180deg, #32b7ae, #194258);
-    padding-top: 70px;
-    padding-bottom: 70px;
+	background-image: url('../Images/fondolog.jpg');
+	
 }
 .landing .subjects .title-container {
     margin-bottom: 50px;
@@ -7985,26 +7984,26 @@ to {
 .landing .subjects .subjects-container ul li a strong {
     font-weight: bold;
 }
-.landing .subjects .subjects-container ul li a:hover {
-    color: #32b7ae;
-    text-decoration: none;
-}
+	.landing .subjects .subjects-container ul li a:hover {
+		color: #194258;
+		text-decoration: none;
+	}
 .landing .subjects .subjects-container ul li::before {
-    content: "•";
-    color: #32b7ae;
+	content: "•";
+	color: #194258;
 }
 .landing .comments {
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.landing .comments h2 {
-    color: #32b7ae;
-    font-size: 27px;
-    font-weight: bold;
-    margin-top: 0;
-    font-family: "Montserrat";
-    margin-bottom: 50px;
-}
+	.landing .comments h2 {
+		color: #194258;
+		font-size: 27px;
+		font-weight: bold;
+		margin-top: 0;
+		font-family: "Montserrat";
+		margin-bottom: 50px;
+	}
 @media only screen and (max-device-width:990px) {
     .landing .comments h2 {
     font-size: 24px;
@@ -8019,11 +8018,11 @@ to {
     font-size: 27px;
     color: #194258;
     font-family: "Montserrat"}
-.landing .comments .comments-container h4 strong {
-    font-weight: bold;
-    color: #32b7ae;
-    margin-top: 0;
-}
+	.landing .comments .comments-container h4 strong {
+		font-weight: bold;
+		color: #194258;
+		margin-top: 0;
+	}
 @media only screen and (max-device-width:990px) {
     .landing .comments .comments-container h4 {
     font-size: 20px;
@@ -8137,14 +8136,14 @@ to {
     margin-top: 70px;
     margin-bottom: 70px;
 }
-.landing .blog h2 {
-    color: #32b7ae;
-    font-size: 27px;
-    font-weight: bold;
-    margin-top: 0;
-    font-family: "Montserrat";
-    margin-bottom: 50px;
-}
+	.landing .blog h2 {
+		color: #194258;
+		font-size: 27px;
+		font-weight: bold;
+		margin-top: 0;
+		font-family: "Montserrat";
+		margin-bottom: 50px;
+	}
 @media only screen and (max-device-width:990px) {
     .landing .blog h2 {
     font-size: 24px;
@@ -8222,15 +8221,16 @@ to {
     margin-left: 10px;
     margin-right: 10px;
 }
-}.landing-tutor .hero .btn-search {
-    min-height: 42px;
-    border-radius: 6px;
-    font-weight: 600;
-    padding: 11px 26px;
-    border: 0;
-    color: white;
-    font-size: 16px;
-    background-color: #32b7ae;
+}
+.landing-tutor .hero .btn-search {
+	min-height: 42px;
+	border-radius: 6px;
+	font-weight: 600;
+	padding: 11px 26px;
+	border: 0;
+	color: white;
+	font-size: 16px;
+	background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .landing-tutor .hero .btn-search {
@@ -8257,11 +8257,11 @@ to {
     line-height: 45px;
 }
 .landing-tutor .hero .search-input {
-    padding: 0;
-    border: solid 1px #32b7ae;
-    border-radius: 6px;
-    background-color: #fff;
-    margin-top: 25px;
+	padding: 0;
+	border: solid 1px #194258;
+	border-radius: 6px;
+	background-color: #fff;
+	margin-top: 25px;
 }
 .landing-tutor .hero .input-group-btn {
     margin-left: 6px;
@@ -8306,12 +8306,12 @@ to {
 .landing-tutor .chat .title-container {
     margin-bottom: 50px;
     font-family: "Montserrat"}
-.landing-tutor .chat h2 {
-    margin: 0;
-    color: #32b7ae;
-    font-size: 27px;
-    font-weight: bold;
-}
+	.landing-tutor .chat h2 {
+		margin: 0;
+		color: #194258;
+		font-size: 27px;
+		font-weight: bold;
+	}
 @media only screen and (max-device-width:990px) {
     .landing-tutor .chat h2 {
     font-size: 24px;
@@ -8330,8 +8330,9 @@ to {
     line-height: 24px;
     font-size: 16px;
 }
-}.landing-tutor .chat h3 strong {
-    color: #32b7ae;
+}
+.landing-tutor .chat h3 strong {
+	color: #194258;
 }
 .landing-tutor .chat .profile {
     margin: 0;
@@ -8622,26 +8623,26 @@ to {
 .landing-tutor .subjects .subjects-container ul li a strong {
     font-weight: bold;
 }
-.landing-tutor .subjects .subjects-container ul li a:hover {
-    color: #32b7ae;
-    text-decoration: none;
-}
+	.landing-tutor .subjects .subjects-container ul li a:hover {
+		color: #194258;
+		text-decoration: none;
+	}
 .landing-tutor .subjects .subjects-container ul li::before {
-    content: "•";
-    color: #32b7ae;
+	content: "•";
+	color: #194258;
 }
 .landing-tutor .comments {
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.landing-tutor .comments h2 {
-    color: #32b7ae;
-    font-size: 27px;
-    font-weight: bold;
-    margin-top: 0;
-    font-family: "Montserrat";
-    margin-bottom: 50px;
-}
+	.landing-tutor .comments h2 {
+		color: #194258;
+		font-size: 27px;
+		font-weight: bold;
+		margin-top: 0;
+		font-family: "Montserrat";
+		margin-bottom: 50px;
+	}
 @media only screen and (max-device-width:990px) {
     .landing-tutor .comments h2 {
     font-size: 24px;
@@ -8656,11 +8657,11 @@ to {
     font-size: 27px;
     color: #194258;
     font-family: "Montserrat"}
-.landing-tutor .comments .comments-container h4 strong {
-    font-weight: bold;
-    color: #32b7ae;
-    margin-top: 0;
-}
+	.landing-tutor .comments .comments-container h4 strong {
+		font-weight: bold;
+		color: #194258;
+		margin-top: 0;
+	}
 @media only screen and (max-device-width:990px) {
     .landing-tutor .comments .comments-container h4 {
     font-size: 20px;
@@ -8775,7 +8776,7 @@ to {
     margin-bottom: 70px;
 }
 .landing-tutor .blog h2 {
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
     margin-top: 0;
@@ -9039,7 +9040,7 @@ to {
     margin-top: 10px;
 }
 .imageBox:hover h3 {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .imageBox:hover .hoverImg {
     display: block;
@@ -9049,7 +9050,7 @@ to {
     font-size: 15px;
 }
 .h3-hover h3:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .intl-tel-input {
     min-width: 100%;
@@ -9183,7 +9184,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .blog .hero .btn-search {
@@ -9211,7 +9212,7 @@ to {
 }
 .blog .hero .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -9292,11 +9293,11 @@ to {
     text-decoration: none;
 }
 .blog .hero ul .selected {
-    color: #32b7ae;
+    color: #194258;
     font-weight: bold;
 }
 .blog .hero ul a:hover {
-    color: #32b7ae;
+    color: #194258;
     text-decoration: none;
 }
 .blog .search {
@@ -9326,7 +9327,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .blog .search .btn-search {
@@ -9354,7 +9355,7 @@ to {
 }
 .blog .search .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -9425,8 +9426,8 @@ to {
     border-color: #194258;
 }
 .blog .item .share-1 .follow-item:hover {
-    color: #32b7ae;
-    border-color: #32b7ae;
+    color: #194258;
+    border-color: #194258;
 }
 .blog .item .share-2 {
     margin-top: -26px;
@@ -9457,8 +9458,8 @@ to {
     border-color: #194258;
 }
 .blog .item .share-2 .follow-item:hover {
-    color: #32b7ae;
-    border-color: #32b7ae;
+    color: #194258;
+    border-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .blog .item .share-2 {
@@ -9505,7 +9506,7 @@ to {
     margin-bottom: 20px;
 }
 }.blog .item .text a {
-    color: #32b7ae;
+    color: #194258;
 }
 .blog .item .text strong {
     color: #194258;
@@ -9710,7 +9711,7 @@ to {
     padding-top: 25px;
 }
 }.blog .card-last h3:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .blog .card {
     background-color: #f9f9f9;
@@ -9942,7 +9943,7 @@ to {
     font-size: 15px;
 }
 }.faqs a:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .faqs h3 {
     margin-top: 90px;
@@ -9966,13 +9967,13 @@ to {
     font-size: 14px;
 }
 }.faqs .phone {
-    color: #32b7ae;
+    color: #194258;
 }
 .faqs .email {
-    color: #32b7ae;
+    color: #194258;
 }
 .faqs .discount {
-    color: #32b7ae;
+    color: #194258;
 }
 .checkboxTerms {
     margin-top: 15px;
@@ -9995,7 +9996,7 @@ to {
     padding: 0;
 }
 .checkboxTerms label a:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .checkboxTerms input[type=checkbox] {
     position: absolute;
@@ -10045,11 +10046,11 @@ to {
 }
 .terminos a {
     cursor: pointer;
-    color: #32b7ae;
+    color: #194258;
 }
 .terminos a:hover {
     text-decoration: underline;
-    color: #32b7ae;
+    color: #194258;
 }
 @charset utf-8;
     /*!* Bootstrap v3.3.7(http: //getbootstrap.com) * Copyright 2011-2016 Twitter, Inc. * Licensed under MIT(https://github.com/twbs/bootstrap/blob/master/LICENSE) */ /*!normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */ @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -15235,7 +15236,7 @@ th.visible-print, td.visible-print {
     color: #194258;
 }
 .green {
-    color: #32b7ae;
+    color: #194258;
 }
 body {
     font-family: "Open Sans"}
@@ -15281,33 +15282,33 @@ body {
     left: .5em;
     margin-right: -50%}
 .btn-green {
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 .navbar-btn.tutors {
-    background-color: #32b7ae;
-    color: white;
-    height: 34px;
-    border-radius: 17px;
-    font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
+	background-color: #aeb5b9;
+	color: white;
+	height: 34px;
+	border-radius: 17px;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: none;
 }
 .navbar-btn.tutors:hover {
     opacity: .9;
 }
-.navbar-btn.tutors.inverted {
-    background-color: transparent;
-    color: #32b7ae;
-    border: 1px solid #32b7ae;
-}
-.navbar-btn.tutors.inverted:hover {
-    background-color: #32b7ae;
-    color: white;
-    border: 1px solid #32b7ae;
-}
+	.navbar-btn.tutors.inverted {
+		background-color: transparent;
+		color: #aeb5b9;
+		border: 1px solid #aeb5b9;
+	}
+		.navbar-btn.tutors.inverted:hover {
+			background-color: #aeb5b9;
+			color: white;
+			border: 1px solid #aeb5b9;
+		}
 .btn-contact {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     border-radius: 22px;
     width: 100%;
@@ -15363,12 +15364,12 @@ body {
     border: none;
 }
 .form-control:focus {
-    border-color: #32b7ae;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #32b7ae;
+    border-color: #194258;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #194258;
 }
 .btn-download {
     color: #FFF;
-    background: #32b7ae;
+    background: #194258;
     border-radius: 10px;
     font-size: 30px;
     display: inline-block;
@@ -15392,8 +15393,8 @@ body {
 }
 .btn-download:hover {
     background-color: white;
-    color: #32b7ae;
-    border: 1px solid #32b7ae;
+    color: #194258;
+    border: 1px solid #194258;
 }
 .pac-container {
     z-index: 1051 !important;
@@ -15431,7 +15432,7 @@ body {
     background-color: red;
 }
 #snackbar.succeed {
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 #snackbar.show {
     visibility: visible;
@@ -15565,7 +15566,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media screen and (max-width:1199px) {
     .navbar-default .navbar-search {
@@ -15606,10 +15607,10 @@ to {
     margin-left: 58px;
 }
 .navbar-default .navbar-brand a:hover .teachapp {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-default .navbar-brand a:hover .slogan {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-default .navbar-brand img {
     max-width: 40px;
@@ -15708,10 +15709,10 @@ to {
     margin-left: 58px;
 }
 .navbar-brand.mobile a:hover .teachapp {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-brand.mobile a:hover .slogan {
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar-brand.mobile img {
     max-width: 40px;
@@ -15806,8 +15807,8 @@ to {
     font-size: 18px;
 }
 .footer .follow-item:hover {
-    color: #32b7ae;
-    border-color: #32b7ae;
+    color: #194258;
+    border-color: #194258;
 }
 .footer .phone {
     margin-top: 5px;
@@ -15845,7 +15846,7 @@ to {
     margin-top: 7px;
 }
 .footer .blog:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
     text-decoration: none;
 }
 .footer p {
@@ -15861,7 +15862,7 @@ to {
     float: none;
 }
 }.footer .terms:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
     text-decoration: none;
 }
 .footer .faqs {
@@ -15870,7 +15871,7 @@ to {
     margin-bottom: 6px;
 }
 .footer .faqs:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
     text-decoration: none;
 }
 .footer .follow {
@@ -15880,7 +15881,7 @@ to {
     margin-top: 10px;
 }
 .footer .btn-download {
-    background: #32b7ae;
+    background: #194258;
     border-radius: 10px;
     font-size: 30px;
     display: inline-block;
@@ -15907,8 +15908,8 @@ to {
     text-transform: none;
 }
 .footer .btn-download:hover {
-    color: #32b7ae;
-    border: 1px solid #32b7ae;
+    color: #194258;
+    border: 1px solid #194258;
 }
 .footer-mobile-contact-btn {
     position: fixed;
@@ -15947,7 +15948,7 @@ to {
     margin-right: 3px;
 }
 .footer-mobile .filter.open .where .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .footer-mobile .filter.open .schedule.inverted table th {
     font-size: 14px;
@@ -16003,7 +16004,7 @@ to {
     padding: 0 0 0 0;
 }
 .profile .data .list .price {
-    color: #32b7ae;
+    color: #194258;
     font-size: 19px;
     padding-left: 10px;
     padding-right: 10px;
@@ -16193,7 +16194,7 @@ to {
     margin-bottom: 5px;
 }
 .profile-mobile .data .list .price {
-    color: #32b7ae;
+    color: #194258;
     font-size: 17px;
     font-weight: bold;
     margin-top: 0;
@@ -16211,7 +16212,7 @@ to {
 }
 .profile-mobile #description a {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -16231,7 +16232,7 @@ to {
     font-size: 13px;
     background-color: white;
     text-align: right;
-    color: #32b7ae;
+    color: #194258;
     margin-top: 4px;
     margin-bottom: 5px;
 }
@@ -16291,7 +16292,7 @@ to {
 }
 .profile-mobile .other-subjects .read-more {
     text-align: right;
-    color: #32b7ae;
+    color: #194258;
     margin-top: -5px;
     margin-right: 3px;
     font-size: 13px;
@@ -16337,7 +16338,7 @@ to {
 }
 .other-subjects #subjects a {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -16491,7 +16492,7 @@ to {
     font-size: 12px;
 }
 .schedule.inverted table td .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .schedule.inverted table .title {
     color: white;
@@ -16530,7 +16531,7 @@ to {
 }
 #opinions-p a {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -16601,12 +16602,12 @@ to {
 }
 .opinions .more {
     text-align: right;
-    color: #32b7ae;
+    color: #194258;
     font-size: 14px;
 }
 .opinions .more {
     font-size: 12px;
-    color: #32b7ae;
+    color: #194258;
     float: right;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -16724,7 +16725,7 @@ to {
     font-size: 23px;
 }
 .tutor-list .tutor button {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     padding: 6px 12px;
     font-size: 16px;
@@ -16845,7 +16846,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
     margin-top: -4px;
     margin-left: 5px;
 }
@@ -16969,7 +16970,7 @@ to {
     font-size: 23px;
 }
 .tutor-list-mobile .tutor button {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     padding: 6px 12px;
     font-size: 16px;
@@ -17176,10 +17177,10 @@ to {
     margin-right: 10px;
 }
 .tutors-filter .filters .where .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .where:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule {
     margin-top: 25px;
@@ -17244,7 +17245,7 @@ to {
     font-size: 12px;
 }
 .tutors-filter .filters .schedule table td .selected {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table .title {
     color: white;
@@ -17258,7 +17259,7 @@ to {
     font-size: 14px;
 }
 .tutors-filter .filters .schedule table th:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table tr {
     padding-top: 3px;
@@ -17271,10 +17272,10 @@ to {
     font-size: 14px;
 }
 .tutors-filter .filters .schedule table td i:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table td:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .tutors-filter .filters .schedule table .title {
     font-size: 14px;
@@ -17336,7 +17337,7 @@ to {
     padding: 0 0 0 0;
 }
 .register-page .profile .data .list .price {
-    color: #32b7ae;
+    color: #194258;
     font-size: 19px;
     padding-left: 10px;
     padding-right: 10px;
@@ -17401,13 +17402,13 @@ to {
     font-weight: bold;
 }
 .navbar .register-container .register:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .navbar .register-container .form-group {
     margin-bottom: 12px;
 }
 .navbar .register-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -17434,7 +17435,7 @@ to {
 }
 .navbar .register-container .forgot-pass:hover {
     text-decoration: none;
-    color: #32b7ae;
+    color: #194258;
 }
 .navbar .register-container p {
     color: #194258;
@@ -17457,7 +17458,7 @@ to {
     margin-top: 30px;
 }
 }.navbar .register-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -17481,13 +17482,13 @@ to {
     font-weight: bold;
 }
 .register-container .register:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .register-container .form-group {
     margin-bottom: 12px;
 }
 .register-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -17514,7 +17515,7 @@ to {
 }
 .register-container .forgot-pass:hover {
     text-decoration: none;
-    color: #32b7ae;
+    color: #194258;
 }
 .register-container p {
     color: #194258;
@@ -17550,13 +17551,13 @@ to {
     font-weight: bold;
 }
 .phone-container .register:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .phone-container .form-group {
     margin-bottom: 12px;
 }
 .phone-container .btn {
-    background-color: #32b7ae;
+    background-color: #194258;
     color: white;
     min-width: 100%;
     border-radius: 5px;
@@ -17583,7 +17584,7 @@ to {
 }
 .phone-container .forgot-pass:hover {
     text-decoration: none;
-    color: #32b7ae;
+    color: #194258;
 }
 .phone-container p {
     color: #194258;
@@ -17645,7 +17646,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .landing .hero .btn-search {
@@ -17673,7 +17674,7 @@ to {
 }
 .landing .hero .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -17723,7 +17724,7 @@ to {
     font-family: "Montserrat"}
 .landing .chat h2 {
     margin: 0;
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
 }
@@ -17746,7 +17747,7 @@ to {
     font-size: 16px;
 }
 }.landing .chat h3 strong {
-    color: #32b7ae;
+    color: #194258;
 }
 .landing .chat .profile {
     margin: 0;
@@ -17864,7 +17865,7 @@ to {
     font-weight: bold;
 }
 .landing .level {
-    background: linear-gradient(180deg, #32b7ae, #194258);
+    background: linear-gradient(180deg, #194258, #194258);
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -17901,9 +17902,10 @@ to {
     color: #194258;
 }
 .landing .subjects {
-    background: linear-gradient(180deg, #32b7ae, #194258);
-    padding-top: 70px;
-    padding-bottom: 70px;
+	background-image: url('../Images/fondolog.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
 }
 .landing .subjects .title-container {
     margin-bottom: 50px;
@@ -18038,19 +18040,19 @@ to {
     font-weight: bold;
 }
 .landing .subjects .subjects-container ul li a:hover {
-    color: #32b7ae;
+    color: #194258;
     text-decoration: none;
 }
 .landing .subjects .subjects-container ul li::before {
     content: "•";
-    color: #32b7ae;
+    color: #194258;
 }
 .landing .comments {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 .landing .comments h2 {
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
     margin-top: 0;
@@ -18073,7 +18075,7 @@ to {
     font-family: "Montserrat"}
 .landing .comments .comments-container h4 strong {
     font-weight: bold;
-    color: #32b7ae;
+    color: #194258;
     margin-top: 0;
 }
 @media only screen and (max-device-width:990px) {
@@ -18190,7 +18192,7 @@ to {
     margin-bottom: 70px;
 }
 .landing .blog h2 {
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
     margin-top: 0;
@@ -18282,7 +18284,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .landing-tutor .hero .btn-search {
@@ -18310,7 +18312,7 @@ to {
 }
 .landing-tutor .hero .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -18360,7 +18362,7 @@ to {
     font-family: "Montserrat"}
 .landing-tutor .chat h2 {
     margin: 0;
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
 }
@@ -18383,7 +18385,7 @@ to {
     font-size: 16px;
 }
 }.landing-tutor .chat h3 strong {
-    color: #32b7ae;
+    color: #194258;
 }
 .landing-tutor .chat .profile {
     margin: 0;
@@ -18675,19 +18677,19 @@ to {
     font-weight: bold;
 }
 .landing-tutor .subjects .subjects-container ul li a:hover {
-    color: #32b7ae;
+    color: #194258;
     text-decoration: none;
 }
 .landing-tutor .subjects .subjects-container ul li::before {
     content: "•";
-    color: #32b7ae;
+    color: #194258;
 }
 .landing-tutor .comments {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 .landing-tutor .comments h2 {
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
     margin-top: 0;
@@ -18710,7 +18712,7 @@ to {
     font-family: "Montserrat"}
 .landing-tutor .comments .comments-container h4 strong {
     font-weight: bold;
-    color: #32b7ae;
+    color: #194258;
     margin-top: 0;
 }
 @media only screen and (max-device-width:990px) {
@@ -18827,7 +18829,7 @@ to {
     margin-bottom: 70px;
 }
 .landing-tutor .blog h2 {
-    color: #32b7ae;
+    color: #194258;
     font-size: 27px;
     font-weight: bold;
     margin-top: 0;
@@ -19091,7 +19093,7 @@ to {
     margin-top: 10px;
 }
 .imageBox:hover h3 {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .imageBox:hover .hoverImg {
     display: block;
@@ -19101,7 +19103,7 @@ to {
     font-size: 15px;
 }
 .h3-hover h3:hover {
-    color: #32b7ae !important;
+    color: #194258 !important;
 }
 .intl-tel-input {
     min-width: 100%;
@@ -19235,7 +19237,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .blog .hero .btn-search {
@@ -19263,7 +19265,7 @@ to {
 }
 .blog .hero .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -19344,18 +19346,18 @@ to {
     text-decoration: none;
 }
 .blog .hero ul .selected {
-    color: #32b7ae;
+    color: #194258;
     font-weight: bold;
 }
 .blog .hero ul a:hover {
-    color: #32b7ae;
+    color: #194258;
     text-decoration: none;
 }
 .blog .search {
     margin-top: 0;
     padding-top: 30px;
     padding-bottom: 70px;
-    background: linear-gradient(180deg, #32b7ae, #194258);
+    background: linear-gradient(180deg, #194258, #194258);
 }
 .blog .search .col-md-offset-1 {
     margin-left: 19%}
@@ -19378,7 +19380,7 @@ to {
     border: 0;
     color: white;
     font-size: 16px;
-    background-color: #32b7ae;
+    background-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .blog .search .btn-search {
@@ -19406,7 +19408,7 @@ to {
 }
 .blog .search .search-input {
     padding: 0;
-    border: solid 1px #32b7ae;
+    border: solid 1px #194258;
     border-radius: 6px;
     background-color: #fff;
     margin-top: 25px;
@@ -19477,8 +19479,8 @@ to {
     border-color: #194258;
 }
 .blog .item .share-1 .follow-item:hover {
-    color: #32b7ae;
-    border-color: #32b7ae;
+    color: #194258;
+    border-color: #194258;
 }
 .blog .item .share-2 {
     margin-top: -26px;
@@ -19509,8 +19511,8 @@ to {
     border-color: #194258;
 }
 .blog .item .share-2 .follow-item:hover {
-    color: #32b7ae;
-    border-color: #32b7ae;
+    color: #194258;
+    border-color: #194258;
 }
 @media only screen and (min-device-width:320px) and (max-device-width:990px) {
     .blog .item .share-2 {
@@ -19557,7 +19559,7 @@ to {
     margin-bottom: 20px;
 }
 }.blog .item .text a {
-    color: #32b7ae;
+    color: #194258;
 }
 .blog .item .text strong {
     color: #194258;
@@ -19762,7 +19764,7 @@ to {
     padding-top: 25px;
 }
 }.blog .card-last h3:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .blog .card {
     background-color: #f9f9f9;
@@ -19994,7 +19996,7 @@ to {
     font-size: 15px;
 }
 }.faqs a:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .faqs h3 {
     margin-top: 90px;
@@ -20018,13 +20020,13 @@ to {
     font-size: 14px;
 }
 }.faqs .phone {
-    color: #32b7ae;
+    color: #194258;
 }
 .faqs .email {
-    color: #32b7ae;
+    color: #194258;
 }
 .faqs .discount {
-    color: #32b7ae;
+    color: #194258;
 }
 .checkboxTerms {
     margin-top: 15px;
@@ -20047,7 +20049,7 @@ to {
     padding: 0;
 }
 .checkboxTerms label a:hover {
-    color: #32b7ae;
+    color: #194258;
 }
 .checkboxTerms input[type=checkbox] {
     position: absolute;
@@ -20097,9 +20099,9 @@ to {
 }
 .terminos a {
     cursor: pointer;
-    color: #32b7ae;
+    color: #194258;
 }
 .terminos a:hover {
     text-decoration: underline;
-    color: #32b7ae;
+    color: #194258;
 }
