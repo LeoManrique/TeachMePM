@@ -118,7 +118,7 @@ namespace TeachMeNET.Controllers
                 var profesores = _context
                                 .Teachers
                                 .FromSql("SELECT * FROM teachers")
-                                .Where(b => b.UserId == ViewBag.Id)
+                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
                                 .ToList()
                                 .FirstOrDefault();
 
