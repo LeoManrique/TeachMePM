@@ -37,6 +37,7 @@ namespace TeachMeNET.Controllers
                     
                     _context.Add(model);
                     _context.SaveChanges();
+                    HttpContext.Session.SetInt32("Id", model.Id);
                     HttpContext.Session.SetString("UserName", model.Name1);
                     return RedirectToAction("Index", "Home");
                 }
