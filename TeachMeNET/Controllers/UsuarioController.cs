@@ -70,7 +70,9 @@ namespace TeachMeNET.Controllers
                                 .FirstOrDefault(u => u.Email == inicio.Email && u.Password == inicio.Password);
 
                 if (usuario == null) {
-                    ModelState.AddModelError("Incorrecto", "contraseña incorrecta");
+                    //ModelState.AddModelError("Incorrecto", "contraseña incorrecta");
+
+                    return View(inicio);
                 }
                 else {
                     HttpContext.Session.SetInt32("Id", usuario.User.Id);
@@ -80,7 +82,6 @@ namespace TeachMeNET.Controllers
                 }
                 
             }
-			return View(inicio);
 		}
 
 
