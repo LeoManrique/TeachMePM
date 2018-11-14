@@ -42,6 +42,8 @@ namespace TeachMeNET.Controllers
                     _context.SaveChanges();
                     HttpContext.Session.SetInt32("Id", model.Id);
                     HttpContext.Session.SetString("UserName", model.Name1);
+                    HttpContext.Session.SetString("FirstName", model.Name1);
+                    HttpContext.Session.SetString("LastName", model.LastName1);
                     return RedirectToAction("Index", "Home");
                 }
             }
@@ -75,8 +77,10 @@ namespace TeachMeNET.Controllers
                 }
                 else {
                     HttpContext.Session.SetInt32("Id", usuario.User.Id);
-                    HttpContext.Session.SetString("UserName", usuario.User.UserName);//hay un error aqui.
-                    
+                    HttpContext.Session.SetString("UserName", usuario.User.UserName);
+                    HttpContext.Session.SetString("FirstName", usuario.User.Name1);
+                    HttpContext.Session.SetString("LastName", usuario.User.LastName1);
+
                     return RedirectToAction("Index", "Home");
                 }
                 
