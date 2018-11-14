@@ -70,6 +70,11 @@ namespace TeachMeNET.Controllers
             ViewBag.Personas = person;
             ViewBag.Curso = HttpContext.Request.Query["curso"].ToString();
             ViewBag.Lugar = HttpContext.Request.Query["lugar"].ToString();
+
+            ViewBag.DomicilioA = HttpContext.Request.Query["domicilioa"].ToString();
+            ViewBag.DomicilioP = HttpContext.Request.Query["domiciliop"].ToString();
+            ViewBag.LugarP = HttpContext.Request.Query["lugarp"].ToString();
+            ViewBag.Virtual = HttpContext.Request.Query["online"].ToString();
             return View();
         }
 

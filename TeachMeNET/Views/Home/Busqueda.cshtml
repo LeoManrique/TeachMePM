@@ -20,10 +20,70 @@
                 </div>
                 <h4 class="title">Lugar de las clases</h4>
 
-                <p class="where" id="student_home" data-selected="true"><input type="checkbox" id="domicilioa" name="domicilioa" value="1">   <label style="font-weight: 100" for="domicilioa">A domicilio</label></p>
-                <p class="where" id="tutor_home" data-selected="true"><input type="checkbox" id="domiciliop" name="domiciliop" value="1">   <label style="font-weight: 100" for="domiciliop">Domicilio del profesor</label></p>
-                <p class="where" id="other_place" data-selected="true"><input type="checkbox" id="lugarp" name="lugarp" value="1">   <label style="font-weight: 100" for="lugarp">Lugar público</label></p>
-                <p class="where" id="online" data-selected="false"><input type="checkbox" id="online" name="online" value="1">   <label style="font-weight: 100" for="online">Online</label></p>
+                <p class="where" id="student_home" data-selected="true">
+                                @{
+                                    if (ViewBag.DomicilioA != null)
+                                    {
+                                        if (ViewBag.DomicilioA == "1")
+                                        {
+                                             <input type="checkbox" id="domicilioa" checked name="domicilioa" value="1">
+                                        }
+                                        else
+                                        {
+                                             <input type="checkbox" id="domicilioa" name="domicilioa" value="1">
+                                        }
+                                    }
+
+                                }   <label style="font-weight: 100" for="domicilioa">A domicilio</label>
+                            </p>
+                <p class="where" id="tutor_home" data-selected="true">
+                                @{
+                                    if (ViewBag.DomicilioP != null)
+                                    {
+                                        if (ViewBag.DomicilioP == "1")
+                                        {
+                                            <input type="checkbox" id="domiciliop" checked name="domiciliop" value="1">
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" id="domiciliop" name="domiciliop" value="1">
+                                        }
+                                    }
+
+                                }   <label style="font-weight: 100" for="domiciliop">Domicilio del profesor</label>
+                            </p>
+                <p class="where" id="other_place" data-selected="true">
+                                @{
+                                    if (ViewBag.LugarP != null)
+                                    {
+                                        if (ViewBag.LugarP == "1")
+                                        {
+                                            <input type="checkbox" id="lugarp" checked name="lugarp" value="1">
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" id="lugarp" name="lugarp" value="1">
+                                        }
+                                    }
+
+                                }   <label style="font-weight: 100" for="lugarp">Lugar público</label>
+                            </p>
+                <p class="where" id="online" data-selected="false">
+                                @{
+                                    if (ViewBag.Virtual != null)
+                                    {
+                                        if (ViewBag.Virtual == "1")
+                                        {
+                                            <input type="checkbox" id="online" checked name="online" value="1">
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" id="online" name="online" value="1">
+                                        }
+                                    }
+
+                                }   <label style="font-weight: 100" for="online">Online</label>
+                            </p>
 
 
                 <div class="row schedule inverted no-padding no-margin">
