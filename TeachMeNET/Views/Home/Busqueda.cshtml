@@ -14,12 +14,12 @@
 
 
 
-            <p class="where" id="student_home" data-selected="true"><input type="radio" name="lugardeasesoria" value="1">  </i>Domicilio del Alumno</p>
-            <p class="where" id="tutor_home" data-selected="true"><input type="radio" name="lugardeasesoria" value="1">  </i>Estudio del Profesor</p>
-            <p class="where" id="other_place" data-selected="true"><input type="radio" name="lugardeasesoria" value="1">  Lugar público</p>
-            <p class="where" id="online" data-selected="false"><input type="radio" name="lugardeasesoria" value="1">  Web-Online</p>
+            <p class="where" id="student_home" data-selected="true"><input type="checkbox" name="lugardeasesoria" value="1">  A domicilio</p>
+            <p class="where" id="tutor_home" data-selected="true"><input type="checkbox" name="lugardeasesoria" value="1">  Domicilio del profesor</p>
+            <p class="where" id="other_place" data-selected="true"><input type="checkbox" name="lugardeasesoria" value="1">  Lugar público</p>
+            <p class="where" id="online" data-selected="false"><input type="checkbox" name="lugardeasesoria" value="1">  Online</p>
 
-            <h4 class="title" style="margin-top: 25px">Disponibilidad (Días)</h4>
+            <h4 class="title" style="margin-top: 25px">Disponibilidad</h4>
 
             <div class="row schedule inverted no-padding no-margin">
                 <div class="col-xs-12 no-padding">
@@ -64,8 +64,17 @@
                             <td class="schedule-period" data-period="morning" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
                             <td class="schedule-period" data-period="afternoon" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
                         </tr>
+                        <tr></tr>
                     </table>
+
                 </div>
+                
+                <div class="row mt-4">
+                        <button type="button" class="btn btn-primary">
+                            Filtrar
+                        </button>
+                </div>
+
             </div>
         </div>
     </div>
