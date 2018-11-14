@@ -138,7 +138,24 @@
                                     </div>
 
                                     <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"><span class="distance">@i[4]</span></span>
-
+                                    <ul style="display:inline">
+                                        @if (i[8])
+                                        {
+                                            <li style="display:inline"><span class="fa fa-check-circle" style="font-weight: 100"> A domicilio</span></li>
+                                        }
+                                        @if (i[9])
+                                        {
+                                            <li style="display:inline"><span class="fa fa-check-circle" style="font-weight: 100"> Domicilio del profesor</span></li>
+                                        }
+                                        @if (i[10])
+                                        {
+                                            <li style="display:inline"><span class="fa fa-check-circle" style="font-weight: 100"> Lugar público</span></li>
+                                        }
+                                        @if (i[11])
+                                        {
+                                            <li style="display:inline"><span class="fa fa-check-circle" style="font-weight: 100"> Online</span></li>
+                                        }
+                                    </ul>
                                     <div class="separator"></div>
                                 </div>
                             </div>
