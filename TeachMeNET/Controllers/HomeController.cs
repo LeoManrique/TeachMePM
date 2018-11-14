@@ -24,8 +24,19 @@ namespace TeachMeNET.Controllers
         public IActionResult Busqueda()
         {
             var teachers = _context
-                                .Teachers
-                                .ToList();
+                                .Teachers;
+            var users = _context
+                                .Users;
+
+            var personas = teachers.Join(users,
+                            teacher => teacher.UserId,
+                            user => user.Id,
+                            (teacher, user) => new
+                            {
+
+                            }
+                            )
+
             ViewBag.Teachers = teachers;
             return View();
         }

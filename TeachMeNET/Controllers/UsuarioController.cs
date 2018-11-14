@@ -132,6 +132,7 @@ namespace TeachMeNET.Controllers
                     ViewBag.LinkedIn = profesores.LinkedIn;
                     ViewBag.Topic1 = profesores.Topic1;
                     ViewBag.Price1 = profesores.Price1;
+                    ViewBag.AboutMe = profesores.AboutMe;
                     ViewBag.ToHouse = profesores.ToHouse;
                     ViewBag.MyHouse = profesores.MyHouse;
                     ViewBag.PublicSpace = profesores.PublicSpace;
@@ -174,6 +175,7 @@ namespace TeachMeNET.Controllers
                 teacher.LinkedIn = profesor.LinkedIn;
                 teacher.Topic1 = profesor.Topic1;
                 teacher.Price1 = profesor.Price1;
+                teacher.AboutMe = profesor.AboutMe;
                 teacher.ToHouse = profesor.ToHouse;
                 teacher.MyHouse = profesor.MyHouse;
                 teacher.PublicSpace = profesor.PublicSpace;
@@ -202,10 +204,12 @@ namespace TeachMeNET.Controllers
                 ViewBag.LinkedIn = profes.LinkedIn;
                 ViewBag.Topic1 = profes.Topic1;
                 ViewBag.Price1 = profes.Price1;
+                ViewBag.AboutMe = profes.AboutMe;
                 ViewBag.ToHouse = profes.ToHouse;
                 ViewBag.MyHouse = profes.MyHouse;
                 ViewBag.PublicSpace = profes.PublicSpace;
                 ViewBag.Online = profes.Online;
+                
             }
             return View();
         }
