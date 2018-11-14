@@ -10,6 +10,12 @@ namespace TeachMeNET.Controllers
 {
     public class HomeController : BaseController
     {
+        private readonly TeachMeContext _context;
+        public HomeController(TeachMeContext context)
+        {
+            this._context = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -17,6 +23,10 @@ namespace TeachMeNET.Controllers
 
         public IActionResult Busqueda()
         {
+            var teachers = _context
+                                .Teachers
+                                .ToList();
+            ViewBag.Teachers = teachers;
             return View();
         }
 

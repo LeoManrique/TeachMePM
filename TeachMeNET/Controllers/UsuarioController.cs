@@ -124,18 +124,19 @@ namespace TeachMeNET.Controllers
                                 .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
                                 .ToList()
                                 .FirstOrDefault();
-                
-                ViewBag.ProfeId = profesores.Id;
-                ViewBag.Country = profesores.Country;
-                ViewBag.City = profesores.City;
-                ViewBag.LinkedIn = profesores.LinkedIn;
-                ViewBag.Topic1 = profesores.Topic1;
-                ViewBag.Price1 = profesores.Price1;
-                ViewBag.ToHouse = profesores.ToHouse;
-                ViewBag.MyHouse = profesores.MyHouse;
-                ViewBag.PublicSpace = profesores.PublicSpace;
-                ViewBag.Online = profesores.Online;
-                
+                if (profesores != null)
+                {
+                    ViewBag.ProfeId = profesores.Id;
+                    ViewBag.Country = profesores.Country;
+                    ViewBag.City = profesores.City;
+                    ViewBag.LinkedIn = profesores.LinkedIn;
+                    ViewBag.Topic1 = profesores.Topic1;
+                    ViewBag.Price1 = profesores.Price1;
+                    ViewBag.ToHouse = profesores.ToHouse;
+                    ViewBag.MyHouse = profesores.MyHouse;
+                    ViewBag.PublicSpace = profesores.PublicSpace;
+                    ViewBag.Online = profesores.Online;
+                }
                 return View();
             }   
                
@@ -148,7 +149,10 @@ namespace TeachMeNET.Controllers
             {
                 var teacher = _context
                                 .Teachers
-                                .FirstOrDefault(u => u.Id == profesor.Id);
+                                .FromSql("SELECT * FROM teachers")
+                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
+                                .ToList()
+                                .FirstOrDefault();
 
                 if (teacher == null)
                 {
@@ -159,36 +163,50 @@ namespace TeachMeNET.Controllers
 
                     teacher = _context
                                 .Teachers
-                                .FirstOrDefault(u => u.Id == profesor.Id);
+                                .FromSql("SELECT * FROM teachers")
+                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
+                                .ToList()
+                                .FirstOrDefault();
                 }
-                else
-                {
-                    teacher.City = profesor.City;
 
-                    _context
-                    .Teachers
-                    .Update(teacher);
+                teacher.Country = profesor.Country;
+                teacher.City = profesor.City;
+                teacher.LinkedIn = profesor.LinkedIn;
+                teacher.Topic1 = profesor.Topic1;
+                teacher.Price1 = profesor.Price1;
+                teacher.ToHouse = profesor.ToHouse;
+                teacher.MyHouse = profesor.MyHouse;
+                teacher.PublicSpace = profesor.PublicSpace;
+                teacher.Online = profesor.Online;
 
-                    _context.SaveChanges();
+                _context
+                .Teachers
+                .Update(teacher);
+
+                _context.SaveChanges();
                     
-                }
+                
 
             }
             var profes = _context
                                 .Teachers
-                                .FirstOrDefault(u => u.Id == profesor.Id);
-
-            ViewBag.ProfeId = profes.Id;
-            ViewBag.Country = profes.Country;
-            ViewBag.City = profes.City;
-            ViewBag.LinkedIn = profes.LinkedIn;
-            ViewBag.Topic1 = profes.Topic1;
-            ViewBag.Price1 = profes.Price1;
-            ViewBag.ToHouse = profes.ToHouse;
-            ViewBag.MyHouse = profes.MyHouse;
-            ViewBag.PublicSpace = profes.PublicSpace;
-            ViewBag.Online = profes.Online;
-
+                                .FromSql("SELECT * FROM teachers")
+                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
+                                .ToList()
+                                .FirstOrDefault();
+            if (profes != null)
+            {
+                ViewBag.ProfeId = profes.Id;
+                ViewBag.Country = profes.Country;
+                ViewBag.City = profes.City;
+                ViewBag.LinkedIn = profes.LinkedIn;
+                ViewBag.Topic1 = profes.Topic1;
+                ViewBag.Price1 = profes.Price1;
+                ViewBag.ToHouse = profes.ToHouse;
+                ViewBag.MyHouse = profes.MyHouse;
+                ViewBag.PublicSpace = profes.PublicSpace;
+                ViewBag.Online = profes.Online;
+            }
             return View();
         }
     }

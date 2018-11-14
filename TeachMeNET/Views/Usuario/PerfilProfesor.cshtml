@@ -13,10 +13,10 @@
                     <form asp-controller="Usuario" asp-action="PerfilProfesor" method="post">
 
                         <h4>Mi Perfil</h4>
-                        <input type="hidden" asp-for="Id" value=@ViewBag.ProfeId/>
+                        
                         <div class="form-group text-left">
                             <label asp-for="Country">País</label>
-                            <input asp-for="Country" class="form-control" />
+                            <input asp-for="Country" class="form-control" value="@ViewBag.Country"/>
                             <span asp-validation-for="Country" class="text-danger"></span>
                         </div>
                         <div class="form-group text-left">
