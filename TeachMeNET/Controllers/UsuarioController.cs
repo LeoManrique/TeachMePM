@@ -82,7 +82,8 @@ namespace TeachMeNET.Controllers
                 }
                 
             }
-		}
+            return View(inicio);
+        }
 
 
         public IActionResult Logout()
