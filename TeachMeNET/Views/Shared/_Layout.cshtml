@@ -63,25 +63,42 @@
                                     <a asp-action="Registro" asp-controller="Usuario">Registrarse</a>
                                 </div>
                             </li>
+
                             <li class="nav-item active">
                                 <div>
                                     <a asp-action="Login" asp-controller="Usuario">Ingresa</a>
                                 </div>
                             </li>
+
+                            <li class="nav-item active">
+                                <button type="button" class="btn btn-default navbar-btn navbar-right tutors  " onclick="">¿Deseas dar clases particulares?</button>
+                            </li>
                         }
                         else
                         {
-                            <li class="nav-item active">
+             
+                            <li class="nav-item dropdown">
                                 <div>
-                                    <a asp-action="Logout" asp-controller="Usuario">Logout</a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" style="background-color: #194258" aria-labelledby="navbarDropdown">
+                                        
+                                        <a class="dropdown-item" href="#">Mi perfil como alumno</a>
+                                        <a class="dropdown-item" href="#">Mi perfil como profesor</a>
+                                        <div class="dropdown-divider"></div>
+                                        <div>
+                                            <a class="dropdown-item" asp-action="Logout" asp-controller="Usuario">Logout</a>
+                                        </div>
+                                    </div>
                                 </div>
+                                
+                                
                             </li>
                         }
                     }
 
-                    <li class="nav-item active">
-                        <button type="button" class="btn btn-default navbar-btn navbar-right tutors  " onclick="">¿Deseas dar clases particulares?</button>
-                    </li>
+
                 </ul>
             </div>
         </div>

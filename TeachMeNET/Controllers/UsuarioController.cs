@@ -70,7 +70,6 @@ namespace TeachMeNET.Controllers
                     return RedirectToAction("Index", "Home");
                 }
                 
-
             }
 			return View(inicio);
 		}
