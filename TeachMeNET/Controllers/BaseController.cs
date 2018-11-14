@@ -13,7 +13,7 @@ namespace TeachMeNET.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-			var id = HttpContext.Session.GetString("Id");
+			var id = HttpContext.Session.GetInt32("Id");
 
 			var username = HttpContext.Session.GetString("UserName");
 

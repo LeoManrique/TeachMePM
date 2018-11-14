@@ -64,6 +64,7 @@ namespace TeachMeNET.Controllers
                     ModelState.AddModelError("Incorrecto", "contraseña incorrecta");
                 }
                 else {
+                    HttpContext.Session.SetInt32("Id", usuario.User.Id);
                     HttpContext.Session.SetString("UserName", usuario.User.UserName);//hay un error aqui.
                     
                     return RedirectToAction("Index", "Home");
