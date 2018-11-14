@@ -40,11 +40,12 @@ namespace TeachMeNET.Controllers
                                 City = teacher.City,
                                 Country = teacher.Country,
                                 Price = teacher.Price1,
-                                
-                            }
-                            );
 
-            ViewBag.Teachers = teachers;
+                            }
+                            ).GroupBy(record => record.UserId);
+
+            ViewBag.Personas = personas; 
+
             return View();
         }
 
