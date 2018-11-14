@@ -8,75 +8,36 @@
     <div class="tutors-filter">
         <h3 class="title">Filtrar resultados por:</h3>
 
-        <div class="col-md-12 filters">
-            <h4 class="title">Lugar de las clases</h4>
-
-
-
-
-            <p class="where" id="student_home" data-selected="true"><input type="checkbox" name="lugardeasesoria" value="1">  A domicilio</p>
-            <p class="where" id="tutor_home" data-selected="true"><input type="checkbox" name="lugardeasesoria" value="1">  Domicilio del profesor</p>
-            <p class="where" id="other_place" data-selected="true"><input type="checkbox" name="lugardeasesoria" value="1">  Lugar público</p>
-            <p class="where" id="online" data-selected="false"><input type="checkbox" name="lugardeasesoria" value="1">  Online</p>
-
-            <h4 class="title" style="margin-top: 25px">Disponibilidad</h4>
-
-            <div class="row schedule inverted no-padding no-margin">
-                <div class="col-xs-12 no-padding">
-                    <table class="w3-table">
-                        <tr>
-                            <th></th>
-                            <th id="morning-title" data-selected="true">Mañanas</th>
-                            <th id="afternoon-title" data-selected="true">Tardes</th>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="true" data-day="mon" style="max-width: 35px;">L</td>
-                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="true" data-day="tue" style="max-width: 35px;">M</td>
-                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="true" data-day="wed" style="max-width: 35px;">X</td>
-                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="true" data-day="thu" style="max-width: 35px;">J</td>
-                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="true" data-day="fri" style="max-width: 35px;">V</td>
-                            <td class="schedule-period" data-period="morning" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="true"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="false" data-day="sat" style="max-width: 35px;">S</td>
-                            <td class="schedule-period" data-period="morning" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr>
-                            <td class="title day-title" data-selected="false" data-day="sun" style="max-width: 35px;">D</td>
-                            <td class="schedule-period" data-period="morning" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
-                            <td class="schedule-period" data-period="afternoon" data-selected="false"><input type="radio" name="transporte" value="1"> </td>
-                        </tr>
-                        <tr></tr>
-                    </table>
-
+        <form asp-action="Busqueda" asp-controller="Home" method="get">
+            <div class="col-md-12 filters">
+                <div class="form-group text-left">
+                    <h4 class="title">Curso</h4>
+                    <input id="curso" name="curso" class="form-control" placeholder="¿Qué curso?" value="@ViewBag.Curso" />
                 </div>
-                
-                <div class="row mt-4">
-                        <button type="button" class="btn btn-primary">
+                <div class="form-group text-left">
+                    <h4 class="title">Ciudad</h4>
+                    <input id="lugar" name="lugar" class="form-control" placeholder="¿En qué ciudad?" value="@ViewBag.Lugar" />
+                </div>
+                <h4 class="title">Lugar de las clases</h4>
+
+                <p class="where" id="student_home" data-selected="true"><input type="checkbox" id="domicilioa" name="domicilioa" value="1">   <label style="font-weight: 100" for="domicilioa">A domicilio</label></p>
+                <p class="where" id="tutor_home" data-selected="true"><input type="checkbox" id="domiciliop" name="domiciliop" value="1">   <label style="font-weight: 100" for="domiciliop">Domicilio del profesor</label></p>
+                <p class="where" id="other_place" data-selected="true"><input type="checkbox" id="lugarp" name="lugarp" value="1">   <label style="font-weight: 100" for="lugarp">Lugar público</label></p>
+                <p class="where" id="online" data-selected="false"><input type="checkbox" id="online" name="online" value="1">   <label style="font-weight: 100" for="online">Online</label></p>
+
+
+                <div class="row schedule inverted no-padding no-margin">
+
+
+                    <div class="row mt-4">
+                        <button type="submit" class="btn btn-primary">
                             Filtrar
                         </button>
-                </div>
+                    </div>
 
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <div class="col-md-9 mt-5 col-md-offset-3 no-padding">
