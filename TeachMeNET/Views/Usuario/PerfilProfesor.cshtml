@@ -29,9 +29,34 @@
                             <span asp-validation-for="LinkedIn" class="text-danger"></span>
                         </div>
                         <div class="form-group text-left">
+                            <label asp-for="Topic1">Curso que enseña</label>
+                            <input asp-for="Topic1" class="form-control" />
+                            <span asp-validation-for="Topic1" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label asp-for="Price1">Precio por hora (soles)</label>
+                            <input type="number" asp-for="Price1" class="form-control" value=""/>
+                            <span asp-validation-for="Price1" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <input type="checkbox" asp-for="ToHouse" />
                             <label asp-for="ToHouse">A domicilio</label>
-                            <input type="checkbox" asp-for="ToHouse" class="form-control" />
                             <span asp-validation-for="ToHouse" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <input type="checkbox"  asp-for="MyHouse" />
+                            <label asp-for="MyHouse">En domicilio propio</label>
+                            <span asp-validation-for="MyHouse" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <input type="checkbox" asp-for="PublicSpace" />
+                            <label asp-for="PublicSpace">Lugar público</label>
+                            <span asp-validation-for="PublicSpace" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-left">
+                            <input type="checkbox" asp-for="Online" />
+                            <label asp-for="Online">Clases online</label>
+                            <span asp-validation-for="Online" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Actualizar</button>
