@@ -84,5 +84,14 @@ namespace TeachMeNET.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
-    }
+
+		public IActionResult MiPerfil()
+		{
+			if (ViewBag.Id == null)
+				return RedirectToAction("Index", "Home");
+			else
+				return View();
+		}
+
+	}
 }
