@@ -124,21 +124,7 @@ namespace TeachMeNET.Controllers
                                 .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
                                 .ToList()
                                 .FirstOrDefault();
-                if (profesores == null)
-                {
-                    var profesor = new Teacher();
-                    profesor.UserId = (int) HttpContext.Session.GetInt32("Id");
-                    _context.Add(profesor);
-                    _context.SaveChanges();
-
-                    profesores = _context
-                                .Teachers
-                                .FromSql("SELECT * FROM teachers")
-                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
-                                .ToList()
-                                .FirstOrDefault();
-                } 
-
+                
                 ViewBag.ProfeId = profesores.Id;
                 ViewBag.Country = profesores.Country;
                 ViewBag.City = profesores.City;
@@ -160,16 +146,20 @@ namespace TeachMeNET.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                //aqui obtienes la lista de logins
-                //var existeUsuario = _context.InicioSesiones.Any(u => u.Email == inicio.Email && u.Password == inicio.Password); //para ver si hay alguno que cumple con la condicion
                 var teacher = _context
                                 .Teachers
                                 .FirstOrDefault(u => u.Id == profesor.Id);
 
                 if (teacher == null)
                 {
-                    ModelState.AddModelError("Incorrecto", "Datos inválidos");
+                    var profe = new Teacher();
+                    profe.UserId = (int)HttpContext.Session.GetInt32("Id");
+                    _context.Add(profe);
+                    _context.SaveChanges();
+
+                    teacher = _context
+                                .Teachers
+                                .FirstOrDefault(u => u.Id == profesor.Id);
                 }
                 else
                 {
@@ -180,27 +170,24 @@ namespace TeachMeNET.Controllers
                     .Update(teacher);
 
                     _context.SaveChanges();
+                    
                 }
-                
 
             }
-            var profesores = _context
+            var profes = _context
                                 .Teachers
-                                .FromSql("SELECT * FROM teachers")
-                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
-                                .ToList()
-                                .FirstOrDefault();
+                                .FirstOrDefault(u => u.Id == profesor.Id);
 
-            ViewBag.ProfeId = profesores.Id;
-            ViewBag.Country = profesores.Country;
-            ViewBag.City = profesores.City;
-            ViewBag.LinkedIn = profesores.LinkedIn;
-            ViewBag.Topic1 = profesores.Topic1;
-            ViewBag.Price1 = profesores.Price1;
-            ViewBag.ToHouse = profesores.ToHouse;
-            ViewBag.MyHouse = profesores.MyHouse;
-            ViewBag.PublicSpace = profesores.PublicSpace;
-            ViewBag.Online = profesores.Online;
+            ViewBag.ProfeId = profes.Id;
+            ViewBag.Country = profes.Country;
+            ViewBag.City = profes.City;
+            ViewBag.LinkedIn = profes.LinkedIn;
+            ViewBag.Topic1 = profes.Topic1;
+            ViewBag.Price1 = profes.Price1;
+            ViewBag.ToHouse = profes.ToHouse;
+            ViewBag.MyHouse = profes.MyHouse;
+            ViewBag.PublicSpace = profes.PublicSpace;
+            ViewBag.Online = profes.Online;
 
             return View();
         }
