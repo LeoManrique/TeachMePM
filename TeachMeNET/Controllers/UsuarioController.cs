@@ -18,6 +18,9 @@ namespace TeachMeNET.Controllers
         public IActionResult Registro()
         {
             ViewBag.Nombre = HttpContext.Session.GetString("UserName");
+            if(ViewBag.Nombre!=null){
+                return RedirectToAction("Index","Home");
+            }
             return View();
         }
 
@@ -48,6 +51,9 @@ namespace TeachMeNET.Controllers
         
         public IActionResult Login()
 		{
+            if(ViewBag.nombre!=null){
+                return RedirectToAction("Index","Home");
+            }
 			return View();
 		}
 
@@ -77,10 +83,6 @@ namespace TeachMeNET.Controllers
 			return View(inicio);
 		}
 
-        public IActionResult ProcesarLogin(User model)
-        {
-            return View();
-        }
 
         public IActionResult Logout()
         {
