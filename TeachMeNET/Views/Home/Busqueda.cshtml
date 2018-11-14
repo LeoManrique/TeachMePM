@@ -84,13 +84,14 @@
         <div class="col-md-12 mt-5 no-padding no-margin tutors" id="tutors-container">
 
 
-            <h1 class="mt-5">Clases particulares:
-                                                    <strong>@ViewBag.Curso</strong>
-                                                    @if (ViewBag.Lugar != "")
-                                                    {
-                                                    <span>en @ViewBag.Lugar</span>
-                                                    }
-                                                    </h1>
+            <h1 class="mt-5">
+                Clases particulares:
+                <strong>@ViewBag.Curso</strong>
+                @if (ViewBag.Lugar != "")
+                {
+                    <span>en @ViewBag.Lugar</span>
+                }
+            </h1>
 
 
 
@@ -99,58 +100,56 @@
 
                 foreach (var i in personas)
                 {
-            <a href="" target="_blank">
-                <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4369210" data-lon="2.1806423">
-                    <div class="col-md-3 col-lg-2">
-                        <img class="avatar" src="~/Images/Busqueda/profe 1.png" alt="@i[0] @i[1] - Profesor particular en  ">
+                    <a href="" target="_blank">
+                        <div class="col-md-12 no-padding no-margin tutor" data-lat="41.4369210" data-lon="2.1806423">
+                            <div class="col-md-3 col-lg-2">
+                                <img class="avatar" src="~/Images/Busqueda/profe 1.png" alt="@i[0] @i[1] - Profesor particular en  ">
 
 
-                    </div>
-
-                    <div class="col-md-7 col-lg-8">
-                        <div class="data-l">
-                            <h3 class="name">@i[0] @i[1]</h3>
-
-
-                            <div class="description" style="min-height: 55px">
-                                @i[5]
                             </div>
 
-                            <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"><span class="distance">@i[4]</span></span>
+                            <div class="col-md-7 col-lg-8">
+                                <div class="data-l">
+                                    <h3 class="name">@i[0] @i[1]</h3>
 
-                            <div class="separator"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
-                        <div class="price">
-                            <div class="no-padding no-margin">
-                                <div class="col-xs-12 no-padding price">
-                                    <h3 style="margin-top: 20px">Desde</h3>
-                                    <h3><strong>S/.@i[7]h</strong></h3>
+
+                                    <div class="description" style="min-height: 55px">
+                                        @i[5]
+                                    </div>
+
+                                    <span class="feature mobile"><input type="image" src="~/Images/Busqueda/camino kilometro.jpg" alt="Submit"><span class="distance">@i[4]</span></span>
+
+                                    <div class="separator"></div>
                                 </div>
-                                <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
-                                    <button type="button" class="btn btn-primary">
-                                        Ver perfil
-                                    </button>
+                            </div>
+                            <div class="col-md-2 col-lg-2 text-right" style="padding-right: 0">
+                                <div class="price">
+                                    <div class="no-padding no-margin">
+                                        <div class="col-xs-12 no-padding price">
+                                            <h3 style="margin-top: 20px">Desde</h3>
+                                            <h3><strong>S/.@i[7]h</strong></h3>
+                                        </div>
+                                        <div class="col-xs-12 no-padding text-right" style="padding-top:4px;">
+                                            <button type="button" class="btn btn-primary">
+                                                Ver perfil
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </a>
+                    </a>
                 }
 
 
             }
-            
+
 
 
 
             <div class="col-md-12 text-center" style="margin-bottom: 60px;">
 
-                <p>Hemos encontrado tutores para tus <strong>clases particulares</strong>  de <strong>Cálculo (Ingeniería)</strong>  en Perú, pero cada día seguimos buscando e incorporando más para ofrecerte a los mejores Tutores.</p>
-
-            </div>
+                <p>Hemos encontrado tutores para tus <strong>clases particulares</strong>  de <strong>Cálculo (Ingeniería)</strong>  en Perú, pero para contactarte con ellos no olvides <a asp-action="Registro" asp-controller="Usuario"><strong>Registrarte</strong></a> previamente!</p>
 
 
         </div>

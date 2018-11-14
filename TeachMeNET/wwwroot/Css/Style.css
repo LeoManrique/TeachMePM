@@ -7849,9 +7849,9 @@ to {
     color: #194258;
 }
 .landing .subjects {
-    background: linear-gradient(180deg, #32b7ae, #194258);
-    padding-top: 70px;
-    padding-bottom: 70px;
+	background-image: url('../Images/fondolog.jpg');
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .landing .subjects .title-container {
     margin-bottom: 50px;
@@ -17901,9 +17901,11 @@ to {
     color: #194258;
 }
 .landing .subjects {
-    background: linear-gradient(180deg, #32b7ae, #194258);
-    padding-top: 70px;
-    padding-bottom: 70px;
+	background-image: url('../Images/fondolog.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .landing .subjects .title-container {
     margin-bottom: 50px;
