@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,6 +20,7 @@ namespace TeachMeNET.Models.Entities
         public Boolean Online { get; set; }
 
         public string LinkedIn { get; set; }
+        [MaxLength(200)]
         public string AboutMe { get; set; }
 
         public string Topic1 { get; set; }

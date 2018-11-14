@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TeachMeNET.Models;
 
 namespace TeachMeNET.Migrations
 {
     [DbContext(typeof(TeachMeContext))]
-    partial class TeachMeContextModelSnapshot : ModelSnapshot
+    [Migration("20181114163404_maxlenght")]
+    partial class maxlenght
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
