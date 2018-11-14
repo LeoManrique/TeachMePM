@@ -109,16 +109,20 @@ namespace TeachMeNET.Controllers
         }
         public IActionResult PerfilProfesor()
         {
-
             if (ViewBag.Id == null)
             {
                 return RedirectToAction("Index", "Home");
             }
             else
             {
+                var profesores = _context
+                                .Teachers
+                                .FromSql("SELECT * FROM teachers")
+                                .ToList()
+                                .FirstOrDefault();
 
                 return View();
-            }
+            }   
                
         }
     }
