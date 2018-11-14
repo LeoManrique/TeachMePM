@@ -3,5 +3,21 @@
     ViewData["Title"] = "Perfil como Profesor";
 }
 
-<h2>PerfilProfesor</h2>
+<div class="text-center mt-5">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 mt-5">
+                <section>
+                    <form asp-controller="Usuario" asp-action="PerfilProfesor" method="post">
 
+                        <h4>Mi Perfil</h4>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
