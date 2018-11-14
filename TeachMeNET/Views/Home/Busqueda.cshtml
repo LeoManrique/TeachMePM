@@ -151,7 +151,10 @@
 
                     <div class="col-md-12 text-center" style="margin-bottom: 60px;">
                         <p>
-                            Ellos son los tutores para tus <strong>clases particulares</strong>  de <strong>@ViewBag.Curso</strong>@if (ViewBag.Lugar != "")
+                            Ellos son los tutores para tus <strong>clases particulares</strong>@if (ViewBag.Curso != "")
+                            {
+                                <span> de <strong>@ViewBag.Curso</strong></span>
+                            }@if (ViewBag.Lugar != "")
                             {
                                 <span> en @ViewBag.Lugar</span>
                             }. Cada día seguimos buscando e incorporando más para ofrecerte a los mejores tutores.
@@ -160,7 +163,7 @@
                     </div>
         </div>
     </div>
-
+</div>
 
 <script src="~/Js/Shared/jquery.min.js"></script>
 <script type="text/javascript" src="~/Js/Shared/bootstrap.min.js"></script>

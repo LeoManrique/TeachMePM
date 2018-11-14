@@ -65,11 +65,12 @@
                                     {
                                         @Html.CheckBoxFor(x => x.ToHouse, new { @checked = "checked" })
                                     }
+                                    else
+                                    {
+                                        @Html.CheckBoxFor(x => x.ToHouse)
+                                    }
                                 }
-                                else
-                                {
-                                    @Html.CheckBoxFor(x => x.ToHouse)
-                                }
+
                             }
                             <label asp-for="ToHouse"> A domicilio</label>
                             <span asp-validation-for="ToHouse" class="text-danger"></span>
@@ -82,11 +83,12 @@
                                     {
                                         @Html.CheckBoxFor(x => x.MyHouse, new { @checked = "checked" })
                                     }
+                                    else
+                                    {
+                                        @Html.CheckBoxFor(x => x.MyHouse)
+                                    }
                                 }
-                                else
-                                {
-                                    @Html.CheckBoxFor(x => x.MyHouse)
-                                }
+
                             }
                             <label asp-for="MyHouse">En domicilio propio</label>
                             <span asp-validation-for="MyHouse" class="text-danger"></span>
@@ -99,11 +101,12 @@
                                     {
                                         @Html.CheckBoxFor(x => x.PublicSpace, new { @checked = "checked" })
                                     }
+                                    else
+                                    {
+                                        @Html.CheckBoxFor(x => x.PublicSpace)
+                                    }
                                 }
-                                else
-                                {
-                                    @Html.CheckBoxFor(x => x.PublicSpace)
-                                }
+
                             }
                             <label asp-for="PublicSpace">Lugar público</label>
                             <span asp-validation-for="PublicSpace" class="text-danger"></span>
@@ -116,11 +119,12 @@
                                     {
                                         @Html.CheckBoxFor(x => x.Online, new { @checked = "checked" })
                                     }
+                                    else
+                                    {
+                                        @Html.CheckBoxFor(x => x.Online)
+                                    }
                                 }
-                                else
-                                {
-                                    @Html.CheckBoxFor(x => x.Online)
-                                }
+
                             }
                             <label asp-for="Online">Clases online</label>
                             <span asp-validation-for="Online" class="text-danger"></span>
