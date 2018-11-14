@@ -130,13 +130,79 @@ namespace TeachMeNET.Controllers
                     profesor.UserId = (int) HttpContext.Session.GetInt32("Id");
                     _context.Add(profesor);
                     _context.SaveChanges();
-                } else
-                {
-                    ViewBag.City = profesores.City;
-                }
+
+                    profesores = _context
+                                .Teachers
+                                .FromSql("SELECT * FROM teachers")
+                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
+                                .ToList()
+                                .FirstOrDefault();
+                } 
+
+                ViewBag.ProfeId = profesores.Id;
+                ViewBag.Country = profesores.Country;
+                ViewBag.City = profesores.City;
+                ViewBag.LinkedIn = profesores.LinkedIn;
+                ViewBag.Topic1 = profesores.Topic1;
+                ViewBag.Price1 = profesores.Price1;
+                ViewBag.ToHouse = profesores.ToHouse;
+                ViewBag.MyHouse = profesores.MyHouse;
+                ViewBag.PublicSpace = profesores.PublicSpace;
+                ViewBag.Online = profesores.Online;
+                
                 return View();
             }   
                
+        }
+
+        [HttpPost]
+        public IActionResult PerfilProfesor(Teacher profesor)
+        {
+            if (ModelState.IsValid)
+            {
+
+                //aqui obtienes la lista de logins
+                //var existeUsuario = _context.InicioSesiones.Any(u => u.Email == inicio.Email && u.Password == inicio.Password); //para ver si hay alguno que cumple con la condicion
+                var teacher = _context
+                                .Teachers
+                                .FirstOrDefault(u => u.Id == profesor.Id);
+
+                if (teacher == null)
+                {
+                    ModelState.AddModelError("Incorrecto", "Datos inválidos");
+                }
+                else
+                {
+                    teacher.City = profesor.City;
+
+                    _context
+                    .Teachers
+                    .Update(teacher);
+
+                    _context.SaveChanges();
+                }
+                
+
+            }
+            var profesores = _context
+                                .Teachers
+                                .FromSql("SELECT * FROM teachers")
+                                .Where(b => b.UserId == HttpContext.Session.GetInt32("Id"))
+                                .ToList()
+                                .FirstOrDefault();
+
+            ViewBag.ProfeId = profesores.Id;
+            ViewBag.Country = profesores.Country;
+            ViewBag.City = profesores.City;
+            ViewBag.LinkedIn = profesores.LinkedIn;
+            ViewBag.Topic1 = profesores.Topic1;
+            ViewBag.Price1 = profesores.Price1;
+            ViewBag.ToHouse = profesores.ToHouse;
+            ViewBag.MyHouse = profesores.MyHouse;
+            ViewBag.PublicSpace = profesores.PublicSpace;
+            ViewBag.Online = profesores.Online;
+
+            return View();
         }
     }
 }
