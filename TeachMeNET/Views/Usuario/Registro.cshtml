@@ -4,19 +4,19 @@
     ViewData["Title"] = "Registro";
 }
 
-
 <div class="text-center mt-5">
-    <div class="container">
+    <div class="container text-center">
         <div class="row mt-5">
-            <div class="col-md-12 mt-5">
+            <div class="col">
+            </div>
+            <div class="col-md mt-5">
                 <section>
                     <form asp-controller="Usuario" asp-action="Registro" method="post">
-                        <h4>Registro</h4>
-                        <hr />
                         <div asp-validation-summary="All" class="text-danger">
                             @Html.ValidationSummary()
                         </div>
-
+                        <h1>Registro</h1>
+                        <hr />
 
                         <div class="form-group text-left">
                             <label asp-for="UserName">UserName</label>
@@ -39,30 +39,21 @@
                         <div class="form-group text-left">
                             <label asp-for="Input.Email">Correo</label>
                             <input asp-for="Input.Email" class="form-control" />
-                            <span asp-validation-for="Input.Email" class="text-danger"></span>
                         </div>
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
                         <div class="form-group text-left">
                             <label asp-for="Input.Password">Clave</label>
                             <input asp-for="Input.Password" class="form-control" />
-                            <span asp-validation-for="Input.Password" class="text-danger"></span>
                         </div>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
 
-
-
-
-
-
-
-
-
-
-
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Iniciar sesi&oacute;n</button>
-                        </div>
+                        <button type="submit" class="bttn">Registrarme</button>
+                        
                     </form>
                 </section>
             </div>
+            <div class="col">
+            </div>
         </div>
-    </div>
+        </div>
 </div>
