@@ -33,9 +33,16 @@ namespace TeachMeNET.Controllers
                             user => user.Id,
                             (teacher, user) => new
                             {
-
+                                UserId = user.Id,
+                                Name = user.Name1,
+                                LastName = user.LastName1,
+                                About = teacher.AboutMe,
+                                City = teacher.City,
+                                Country = teacher.Country,
+                                Price = teacher.Price1,
+                                
                             }
-                            )
+                            );
 
             ViewBag.Teachers = teachers;
             return View();

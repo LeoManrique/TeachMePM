@@ -54,7 +54,7 @@
                         </div>
                         <div class="form-group text-left">
                             <label asp-for="AboutMe">Sobre tí</label>
-                            <textarea asp-for="AboutMe" class="form-control" value="@ViewBag.AboutMe"></textarea>
+                            <textarea asp-for="AboutMe" class="form-control">@ViewBag.AboutMe</textarea>
                             <span asp-validation-for="AboutMe" class="text-danger"></span>
                         </div>
                         <div class="form-group text-left">
